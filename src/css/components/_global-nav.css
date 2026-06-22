@@ -1,2 +1,44 @@
-/* edit-test */
-.test-marker { color: red; }
+.global-nav {
+  position: fixed;
+  top: 0;
+  z-index: var(--z-index--layout);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: var(--space--base) var(--space--medium);
+  background-color: var(--color--background-base);
+}
+
+.global-nav.is-closed .global-nav__links {
+  display: none;
+}
+
+.global-nav__menu-toggle {
+  @media screen and (min-width: 1000px) {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .global-nav.is-closed .global-nav__links {
+    display: flex;
+  }
+}
+
+.global-nav__list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space--large);
+
+  @media screen and (min-width: 1000px) {
+    flex-direction: row;
+    align-items: center;
+  }
+}
+
+body:has(.global-nav) {
+  --fixed-nav-offset: 4rem;
+
+  margin-top: var(--fixed-nav-offset);
+}
