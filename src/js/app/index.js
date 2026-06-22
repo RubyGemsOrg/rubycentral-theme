@@ -1,4 +1,4 @@
-import './navigation-top';
+import './global-nav';
 
 document.querySelectorAll('.section-header').forEach((header) => {
     header.addEventListener('click', function () {

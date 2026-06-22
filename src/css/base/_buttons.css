@@ -29,6 +29,7 @@
 
   &:hover,
   &:focus-visible {
+    color: var(--color--text-inverse);
     background-color: var(--color--primary-dark);
   }
 }

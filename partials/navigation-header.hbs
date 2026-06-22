@@ -1,0 +1,25 @@
+<header class="global-nav is-closed" data-global-nav>
+  <a href="/" class="global-nav__logo">{{> "logo"}}</a>
+  <nav id="global-nav-menu" class="global-nav__links" aria-label="Primary">
+    <ul class="global-nav__list">
+      {{#foreach navigation}}
+        <li class="global-nav__item">
+          <a class="global-nav__link" href="{{url absolute="true"}}">{{label}}</a>
+        </li>
+      {{/foreach}}
+      <li class="global-nav__item">
+        <a href="#" class="button button--primary">Get involved</a>
+      </li>
+    </ul>
+  </nav>
+  <button
+    type="button"
+    class="global-nav__menu-toggle"
+    data-global-nav-toggle
+    aria-expanded="false"
+    aria-controls="global-nav-menu"
+    aria-label="Toggle navigation"
+  >
+  Menu
+  </button>
+</header>

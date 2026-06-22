@@ -1,10 +1,13 @@
 @layer reset, dependencies, base, components, utilities, vendors;
 
+/* Resets */
 @import "resets/_normalize.css" layer(reset);
 
+/* Dependencies */
 @import "base/_variables.css" layer(dependencies);
 @import "base/_fonts.css" layer(dependencies);
 
+/* Base */
 @import "base/_animation.css" layer(base);
 @import "base/_buttons.css" layer(base);
 @import "base/_disclosures.css" layer(base);
@@ -14,7 +17,9 @@
 @import "base/_tables.css" layer(base);
 @import "base/_typography.css" layer(base);
 
-/* Components — add new component imports here in ABC order */
+/* Components */
+/* Import components from the component folder here in ABC order */
+@import "components/_global-nav.css" layer(components);
 
 @import "utilities/_hide-visually.css" layer(utilities);
 
