@@ -75,7 +75,7 @@ form {
 ) {
   background-color: var(--color--background-base);
   border-radius: var(--border-radius--base);
-  color: var(--color--text);
+  color: var(--color--text-base);
   padding-block: var(--space--small);
   padding-inline: var(--space--small);
 

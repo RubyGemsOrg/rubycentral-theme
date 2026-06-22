@@ -36,7 +36,7 @@
 .button--secondary {
   background-color: var(--color--background-base);
   border-color: var(--color--primary-base);
-  color: var(--color--text);
+  color: var(--color--text-base);
 
   &:hover,
   &:focus-visible {

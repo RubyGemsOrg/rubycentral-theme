@@ -2,7 +2,7 @@ dialog {
   background-color: var(--color--background-base);
   border: var(--border--base);
   border-radius: var(--border-radius--base);
-  color: var(--color--text);
+  color: var(--color--text-base);
   flex-direction: column;
   gap: var(--space--base);
   max-width: var(--container--base);

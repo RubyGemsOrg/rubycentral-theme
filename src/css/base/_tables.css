@@ -27,7 +27,7 @@ table {
 }
 
 th {
-  background-color: var(--color--background-light);
+  background-color: var(--color--background-secondary);
   border-top: var(--border--light);
   font-size: var(--font-size--small);
   font-weight: var(--font-weight--bold);
@@ -51,7 +51,7 @@ tr:last-child td:last-child {
 }
 
 .table--striped tbody tr:nth-child(even) {
-  background-color: var(--color--background-x-light);
+  background-color: var(--color--background-base);
 }
 
 .table-outer-wrapper {
