@@ -9,7 +9,7 @@
     "nav nav";
   grid-template-columns: 1fr min-content;
   padding: var(--space--base) var(--space--medium);
-  position: fixed;
+  position: sticky;
   top: 0;
   width: 100%;
   z-index: var(--z-index--layout);
@@ -70,8 +70,5 @@
 }
 
 body:has(.global-nav) {
-  --fixed-nav-offset: 4rem;
-
   container: global-nav / inline-size;
-  margin-top: var(--fixed-nav-offset);
 }
