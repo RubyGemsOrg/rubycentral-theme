@@ -4,8 +4,8 @@
   border-radius: var(--border-radius--base);
   cursor: pointer;
   display: flex;
-  font-weight: var(--font-weight--bold);
   font-size: var(--font-size--ui);
+  font-weight: var(--font-weight--bold);
   gap: var(--space--x-small);
   justify-content: center;
   line-height: 1;

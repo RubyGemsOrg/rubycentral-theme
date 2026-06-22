@@ -15,7 +15,7 @@
     "build": "NODE_ENV=production rollup -c && npm run css:build",
     "zip": "npm run build && node utils/zip",
     "check": "gscan .",
-    "css": "npx stylelint 'src/css/**/*.css' --fix"
+    "css:lint": "npx stylelint 'src/css/**/*.css' --fix"
   },
   "keywords": [
     "ghost-theme"

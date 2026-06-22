@@ -9,8 +9,8 @@ table {
 }
 
 :where(thead, tbody) :where(th, td) {
-  border-inline-end: var(--border--light);
   border-bottom: var(--border--light);
+  border-inline-end: var(--border--light);
   padding-block: var(--space--small);
   padding-inline: var(--space--small);
 }
@@ -59,8 +59,8 @@ tr:last-child td:last-child {
 }
 
 .table-inner-wrapper {
-  overflow-x: auto;
   flex: 1 1 0%;
   margin-block-end: var(--space--base);
+  overflow-x: auto;
   width: 1rem;
 }
