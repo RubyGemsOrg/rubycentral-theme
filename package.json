@@ -8,8 +8,8 @@
   "main": "'src/index.js'",
   "scripts": {
     "reload": "node utils/reload",
-    "dev": "npm run reload & npm run watch & npm run css:watch",
-    "watch": "NODE_ENV=development rollup -c -w",
+    "dev": "npm run reload & npm run watch",
+    "watch": "NODE_ENV=development rollup -c -w & npm run css:watch",
     "css:build": "lightningcss --minify --bundle --sourcemap --browserslist src/css/app.css -o assets/dist/app.css",
     "css:watch": "chokidar 'src/css/**/*.css' -c 'npm run css:build' --initial",
     "build": "NODE_ENV=production rollup -c && npm run css:build",
