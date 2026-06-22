@@ -1,4 +1,3 @@
-import "../../css/app.css"
 import './navigation-top';
 
 document.querySelectorAll('.section-header').forEach((header) => {
