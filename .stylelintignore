@@ -1,0 +1,4 @@
+# Third-party / vendor CSS kept verbatim for easy comparison against upstream
+# and not subject to our own style rules.
+src/css/resets/_normalize.css
+src/css/vendors/
