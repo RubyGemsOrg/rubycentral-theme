@@ -1,7 +1,5 @@
-<ul class='navigation__list'>
-    {{#foreach navigation}}
-        <li class='navigation__item'>
-            <a href="{{url absolute='true'}}">{{label}}</a>
-        </li>
-    {{/foreach}}
-</ul>
+{{#if isSecondary}}
+  {{> "navigation-footer"}}
+{{else}}
+  {{> "navigation-header"}}
+{{/if}}

@@ -1,0 +1,11 @@
+<header class="global-nav">
+  <nav class="global-nav__links" aria-label="Primary">
+    <ul class="global-nav__list">
+      {{#foreach navigation}}
+        <li class="global-nav__item">
+          <a class="global-nav__link" href="{{url absolute="true"}}">{{label}}</a>
+        </li>
+      {{/foreach}}
+    </ul>
+  </nav>
+</header>
