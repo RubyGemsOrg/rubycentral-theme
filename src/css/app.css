@@ -1,33 +1,23 @@
-/* Base */
-@import './base/typography.css';
-@import './base/variables.css';
+@layer reset, dependencies, base, components, utilities, vendors;
 
-/* Components */
-@import './components/button.css';
-@import './components/code.css';
-@import './components/get-involved.css';
-@import './components/sponsors.css';
-@import './components/profile-image.css';
-@import './components/static-content.css';
-@import './components/back.css';
-@import './components/divider.css';
+@import "resets/_normalize.css" layer(reset);
 
-/* Layout */
-@import './layout/reset.css';
-@import './layout/dropdown.css';
-@import './layout/container.css';
-@import './layout/navigation-top.css';
-@import './layout/footer.css';
+@import "base/_variables.css" layer(dependencies);
+@import "base/_fonts.css" layer(dependencies);
 
-/* Pages */
-@import './pages/post.css';
-@import './pages/home.css';
-@import './pages/conferences.css';
-@import './pages/open-source.css';
-@import './pages/about.css';
+@import "base/_animation.css" layer(base);
+@import "base/_buttons.css" layer(base);
+@import "base/_disclosures.css" layer(base);
+@import "base/_forms.css" layer(base);
+@import "base/_lists.css" layer(base);
+@import "base/_media.css" layer(base);
+@import "base/_tables.css" layer(base);
+@import "base/_typography.css" layer(base);
 
-@import './modern.css';
+/* Components — add new component imports here in ABC order */
+
+@import "utilities/_hide-visually.css" layer(utilities);
 
 /* Vendors */
-@import './vendors/ghost.css';
-@import '../../node_modules/tocbot/dist/tocbot.css';
+@import "vendors/ghost.css" layer(vendors);
+@import "../../node_modules/tocbot/dist/tocbot.css" layer(vendors);
