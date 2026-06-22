@@ -1,11 +1,15 @@
 <header class="global-nav">
   <nav class="global-nav__links" aria-label="Primary">
     <ul class="global-nav__list">
+      <li>
+        <a href="/">{{> "logo"}}</a>
+      </li>
       {{#foreach navigation}}
         <li class="global-nav__item">
           <a class="global-nav__link" href="{{url absolute="true"}}">{{label}}</a>
         </li>
       {{/foreach}}
+      <a href="#" class="button button--primary">Get involved</a>
     </ul>
   </nav>
 </header>
