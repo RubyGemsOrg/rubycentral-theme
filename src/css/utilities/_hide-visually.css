@@ -14,11 +14,11 @@
   clip-path: none;
   height: auto;
   overflow: visible;
-  white-space: inherit;
-  width: auto;
   padding-block: var(--space--small);
   padding-inline: var(--space--medium);
   position: absolute;
   text-align: center;
+  white-space: inherit;
+  width: auto;
   z-index: calc(var(--z-index--layout) + 1);
 }
