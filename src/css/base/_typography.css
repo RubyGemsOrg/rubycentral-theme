@@ -28,10 +28,12 @@ h1 {
 
 a {
   color: var(--color--link);
-  transition: var(--transition-duration--base) color var(--transition-timing--base);
+  text-decoration-color: var(--color--link-accent);
+  text-decoration-thickness: 10%;
+  transition: var(--transition-duration--base) text-decoration-color var(--transition-timing--base);
 
   &:hover {
-    color: var(--color--link-hover);
+    text-decoration-color: var(--color--link);
   }
 }
 

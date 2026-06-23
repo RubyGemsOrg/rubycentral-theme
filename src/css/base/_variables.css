@@ -53,8 +53,8 @@
   --color--button-secondary-hover: var(--color--primary-inverse-dark);
 
   --color--focus: var(--color--primary-dark);
-  --color--link: var(--color--primary-base);
-  --color--link-hover: var(--color--primary-dark);
+  --color--link: var(--color--text-base);
+  --color--link-accent: var(--color--primary-base);
 
   /* Font & typography */
   --font-size--50: 0.875rem;
