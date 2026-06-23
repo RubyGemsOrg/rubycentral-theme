@@ -1,5 +1,5 @@
 {{!-- params: copy, primary, secondary (optional) — each a Ghost page title filter, e.g. "title:'About::Callout'" --}}
-<section class="cta">
+<aside class="cta">
   {{#get 'pages' filter=copy limit='1'}}
     {{#foreach pages}}
       {{content}}
@@ -23,4 +23,4 @@
       </div>
     {{/if}}
   </div>
-</section>
+</aside>

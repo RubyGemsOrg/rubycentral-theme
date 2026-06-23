@@ -1,0 +1,17 @@
+.cta {
+  background-color: var(--color--background-secondary);
+  border-radius: var(--border-radius--base) var(--border-radius--x-large) var(--border-radius--base) var(--border-radius--x-large);
+  padding: var(--space--xx-large);
+
+  p {
+    font-family: var(--font-family--heading-base);
+    font-size: var(--font-size--body-callout);
+    font-weight: var(--font-weight--normal);
+    line-height: var(--line-height--tight);
+  }
+}
+
+.cta__actions {
+  display: flex;
+  gap: var(--space--base);
+}
