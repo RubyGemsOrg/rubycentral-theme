@@ -1,6 +1,7 @@
 .global-nav {
   align-items: center;
   background-color: var(--color--background-base);
+  border-bottom: var(--border--light);
   box-sizing: border-box;
   display: grid;
   gap: var(--space--large);
@@ -69,8 +70,33 @@
   }
 }
 
+.global-nav__link {
+  border-bottom: var(--border-width--thick) solid transparent;
+  font-weight: var(--font-weight--bold);
+  font-size: var(--font-size--body-small);
+  padding-inline: var(--space--xx-small);
+  padding-block-end: var(--space--xx-small);
+  text-decoration: 0;
+  transition-property: border-bottom-color;
+
+  &:hover {
+    border-bottom-color: var(--color--primary-base);
+  }
+}
+
 .global-nav__logo {
   color: var(--color--primary-base);
+  display: block;
+  transition-property: color;
+
+  &:hover {
+    color: var(--color--primary-dark);
+  }
+
+  svg {
+    height: auto;
+    width: 12rem;
+  }
 }
 
 body:has(.global-nav) {
