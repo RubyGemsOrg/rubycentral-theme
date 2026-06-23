@@ -4,31 +4,34 @@
   grid-template-areas:
     "logo"
     "links"
+    "newsletter"
     "legal";
   padding-block: var(--space--base);
   padding-inline: var(--space--medium);
 
-  h2 {
-    font-size: var(--font-size--body-base);
-  }
-
-  a {
-    color: var(--color--text-inverse);
-    text-decoration-color: var(--color--text-inverse);
-
-    &:hover {
-      text-decoration-color: var(--color--link-accent);
-    }
-  }
-
   @container global-footer (min-width: 65em) {
     grid-template-areas:
       "logo logo logo links links links links"
+      "newsletter newsletter newsletter newsletter newsletter newsletter newsletter"
       "legal legal legal legal legal legal legal";
   }
 }
 
+.global-footer__section h2 {
+  font-size: var(--font-size--body-base);
+}
+
+.global-footer__nav a {
+  color: var(--color--text-inverse);
+  text-decoration-color: var(--color--text-inverse);
+
+  &:hover {
+    text-decoration-color: var(--color--link-accent);
+  }
+}
+
 .global-footer__logo {
+  color: var(--color--text-inverse);
   place-self: start;
   grid-area: logo;
 
@@ -49,16 +52,54 @@
   }
 }
 
-.global-footer__section--bottom {
+.global-footer__newsletter {
   border-top: var(--border--dark);
-  font-size: var(--font-size--body-small);
-  grid-area: legal;
-  padding-block-start: var(--space--base);
+  grid-area: newsletter;
 
   @container global-footer (min-width: 65em) {
     display: grid;
-    grid-template-areas: "copyright copyright copyright legal-links legal-links legal-links legal-links";
     grid-template-columns: subgrid;
+  }
+}
+
+.global-footer__newsletter-form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space--small);
+  margin-top: var(--space--small);
+
+  @container global-footer (min-width: 65em) {
+    display: grid;
+    grid-column: 1 / -1;
+    grid-template-columns: subgrid;
+  }
+}
+
+.global-footer__newsletter-form button {
+  @container global-footer (min-width: 65em) {
+    align-self: end;
+  }
+}
+
+.global-footer__newsletter-form :where(input, button) {
+  block-size: 3.5rem;
+  box-sizing: border-box;
+}
+
+.global-footer__section--bottom {
+  border-top: var(--border--dark);
+  display: grid;
+  font-size: var(--font-size--body-small);
+  gap: var(--space--medium);
+  grid-area: legal;
+  grid-template-areas:
+    "copyright"
+    "legal-links";
+  grid-template-columns: subgrid;
+  padding-block-start: var(--space--base);
+
+  @container global-footer (min-width: 65em) {
+    grid-template-areas: "copyright copyright copyright legal-links legal-links legal-links legal-links";
   }
 }
 
