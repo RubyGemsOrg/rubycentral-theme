@@ -12,9 +12,9 @@
 @import "base/_buttons.css" layer(base);
 @import "base/_disclosures.css" layer(base);
 @import "base/_forms.css" layer(base);
+@import "base/_layout.css" layer(base);
 @import "base/_lists.css" layer(base);
 @import "base/_media.css" layer(base);
-@import "base/_page.css" layer(base);
 @import "base/_tables.css" layer(base);
 @import "base/_typography.css" layer(base);
 

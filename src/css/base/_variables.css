@@ -59,7 +59,7 @@
   /* Font & typography */
   --font-size--50: 0.875rem;
   --font-size--100: 1rem;
-  --font-size--200: 1.5rem;
+  --font-size--200: 1.25rem;
   --font-size--300: 2rem;
   --font-size--400: clamp(2rem, 1.25rem + 2vw, 2.5rem);
   --font-size--500: clamp(2.5rem, 1.375rem + 3vw, 3.25rem);
@@ -70,7 +70,7 @@
   --font-size--body-large: var(--font-size--200);
   --font-size--body-small: var(--font-size--50);
   --font-size--heading-data: var(--font-size--200);
-  --font-size--heading-overline: var(--font-size--300);
+  --font-size--heading-overline: var(--font-size--200);
   --font-size--heading-section: var(--font-size--400);
   --font-size--heading-subsection: var(--font-size--300);
   --font-size--heading-title-big: var(--font-size--600);
@@ -121,8 +121,7 @@
 
 
   /* Spacing - Page margins */
-  --space--page-margin-inline: var(--space--base);
-  --space--page-margin-block: var(--space--large);
+  --space--page: var(--space--medium);
 
   /* Transitions */
   --transition-duration--base: 0.2s;

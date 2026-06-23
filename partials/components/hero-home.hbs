@@ -1,5 +1,5 @@
 {{!-- params: copy, ctas, image — homepage hero only (text+image, no anchor links) --}}
-<header class="hero hero--home u-grid">
+<section class="hero hero--home u-grid">
   <div class="hero__content u-grid-span-3">
     {{#get 'pages' filter=copy limit='1'}}
       {{#foreach pages}}
@@ -25,4 +25,4 @@
       {{/foreach}}
     {{/get}}
   </div>
-</header>
+</section>
