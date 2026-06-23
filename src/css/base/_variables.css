@@ -106,8 +106,8 @@
   --border--dark: var(--border-width--base) solid var(--color--primary-inverse);
 
   /* Container sizing */
-  --container--base: 50rem;
-  --container--large: 85rem;
+  --container--base: 85rem;
+
 
   /* Spacing */
   --space--xx-small: 0.25rem;
@@ -142,18 +142,6 @@
     --border--light: var(--border-width--base) solid ButtonText;
     --border--dark: var(--border-width--base) solid ButtonText;
   }
-
-  /* Breakpoints
-
-    CSS custom properties (variables) cannot be used for breakpoint values,
-    however, to make debugging easier and to stay consistent, try to stick to
-    these values when delaring breakpoints throughout the codebase.
-
-    x-small: 320px;
-    small: 600px; - Used for mobile layout
-    medium: 820px;
-    large: 1000px;
-  */
 }
 
 @media screen and (min-width: 1000px) {

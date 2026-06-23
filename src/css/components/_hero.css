@@ -3,7 +3,6 @@
   border-bottom-left-radius: var(--border-radius--x-large);
   margin-inline: calc(-1 * var(--space--medium));
   padding-block: var(--space--x-large);
-  padding-inline: var(--space--medium);
 }
 
 .hero__content {

@@ -1,29 +1,31 @@
 .global-nav {
-  align-items: center;
   background-color: var(--color--theme-background);
   border-bottom: var(--border--light);
   box-sizing: border-box;
-  display: grid;
-  gap: var(--space--large);
-  grid-template-areas:
-    "logo menu"
-    "nav nav";
-  grid-template-columns: 1fr min-content;
   padding-block: var(--space--base);
-  padding-inline: var(--space--medium);
   position: sticky;
   top: 0;
   width: 100%;
   z-index: var(--z-index--layout);
 }
 
-.global-nav.is-closed {
+.global-nav__inner {
+  align-items: center;
+  display: grid;
+  gap: var(--space--large);
+  grid-template-areas:
+    "logo menu"
+    "nav nav";
+  grid-template-columns: 1fr min-content;
+}
+
+.global-nav.is-closed .global-nav__inner {
   grid-template-areas: "logo menu";
 }
 
 @container global-nav (min-width: 65em) {
-  .global-nav,
-  .global-nav.is-closed {
+  .global-nav__inner,
+  .global-nav.is-closed .global-nav__inner {
     grid-template-areas: "logo nav";
     grid-template-columns: min-content 1fr;
   }

@@ -2,7 +2,7 @@
 
 {{> "components/hero-home" copy="title:'Home::Hero - Body'" primary="title:'Home::Hero - Button Primary'" secondary="title:'Home::Hero - Button Secondary'" image="title:'Home::Hero - Image'"}}
 
-<section class="home-stats" aria-label="Two decades of showing up for Ruby">
+<section class="home-stats u-container" aria-label="Two decades of showing up for Ruby">
   {{#get 'pages' filter="title:'Home::Stats - Heading'" limit='1'}}
     {{#foreach pages}}
       {{content}}
@@ -20,7 +20,7 @@
   </dl>
 </section>
 
-<section class="home-gallery" aria-label="Community photos">
+<section class="home-gallery u-container" aria-label="Community photos">
   <figure class="home-gallery__items">
     {{#get 'pages' filter='tag:hash-home-gallery-image' limit='5' include='feature_image'}}
       {{#foreach pages}}
@@ -32,7 +32,7 @@
   </figure>
 </section>
 
-<section class="home-involvement" aria-label="Ruby Central is your community">
+<section class="home-involvement u-container" aria-label="Ruby Central is your community">
   {{#get 'pages' filter="title:'Home::Involvement - Heading'" limit='1'}}
     {{#foreach pages}}
       {{content}}
@@ -41,7 +41,7 @@
   {{> "components/link-list" links="tag:hash-home-involvement" description=true feature=true}}
 </section>
 
-<section class="home-pillars" aria-labelledby="home-pillars-heading">
+<section class="home-pillars u-container" aria-labelledby="home-pillars-heading">
   <h2 id="home-pillars-heading" class="home-pillars__label">
     {{> "icons/gem-badge"}}
     Pillars

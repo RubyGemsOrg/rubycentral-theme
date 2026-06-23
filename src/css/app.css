@@ -27,6 +27,7 @@
 @import "components/_hero.css" layer(components);
 @import "components/_link-list.css" layer(components);
 
+@import "utilities/_container.css" layer(utilities);
 @import "utilities/_grid.css" layer(utilities);
 @import "utilities/_hide-visually.css" layer(utilities);
 

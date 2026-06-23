@@ -1,0 +1,5 @@
+.u-container {
+  margin-inline: auto;
+  max-width: var(--container--base);
+  padding-inline: var(--space--medium);
+}
