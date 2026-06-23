@@ -1,0 +1,37 @@
+.u-grid {
+  display: grid;
+  gap: var(--space--medium);
+  grid-template-columns: 1fr;
+
+  @media screen and (min-width: 65em) {
+    grid-template-columns: repeat(7, 1fr);
+  }
+}
+
+.u-grid-span-1 {
+  grid-column: span 1;
+}
+
+.u-grid-span-2 {
+  grid-column: span 2;
+}
+
+.u-grid-span-3 {
+  grid-column: span 3;
+}
+
+.u-grid-span-4 {
+  grid-column: span 4;
+}
+
+.u-grid-span-5 {
+  grid-column: span 5;
+}
+
+.u-grid-span-6 {
+  grid-column: span 6;
+}
+
+.u-grid-span-7 {
+  grid-column: span 7;
+}

@@ -23,6 +23,7 @@
 @import "components/_global-footer.css" layer(components);
 @import "components/_global-nav.css" layer(components);
 
+@import "utilities/_grid.css" layer(utilities);
 @import "utilities/_hide-visually.css" layer(utilities);
 
 /* Vendors */

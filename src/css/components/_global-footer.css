@@ -1,13 +1,10 @@
 .global-footer {
   background-color: var(--color--background-dark);
   color: var(--color--text-inverse);
-  display: grid;
-  gap: var(--space--large);
   grid-template-areas:
     "logo"
     "links"
     "legal";
-  grid-template-columns: 1fr;
   padding-block: var(--space--base);
   padding-inline: var(--space--medium);
 
@@ -17,7 +14,6 @@
 
   a {
     color: var(--color--text-inverse);
-    font-size: var(--font-size--body-small);
     text-decoration-color: var(--color--text-inverse);
 
     &:hover {
@@ -27,33 +23,68 @@
 
   @container global-footer (min-width: 65em) {
     grid-template-areas:
-      "logo links"
-      "legal legal";
-    grid-template-columns: min-content 1fr;
+      "logo logo logo links links links links"
+      "legal legal legal legal legal legal legal";
   }
 }
 
 .global-footer__logo {
+  place-self: start;
   grid-area: logo;
+
+  svg {
+    height: auto;
+    width: 20rem;
+  }
 }
 
 .global-footer__links {
-  display: flex;
-  flex-direction: column;
+  display: grid;
   gap: var(--space--large);
   grid-area: links;
+  grid-template-columns: 1fr;
 
   @container global-footer (min-width: 65em) {
-    flex-direction: row;
-    justify-content: flex-end;
+    grid-template-columns: subgrid;
   }
 }
 
 .global-footer__section--bottom {
+  border-top: var(--border--dark);
+  font-size: var(--font-size--body-small);
   grid-area: legal;
+  padding-block-start: var(--space--base);
+
+  @container global-footer (min-width: 65em) {
+    display: grid;
+    grid-template-areas: "copyright copyright copyright legal-links legal-links legal-links legal-links";
+    grid-template-columns: subgrid;
+  }
+}
+
+.global-footer__copyright {
+  grid-area: copyright;
+}
+
+.global-footer__section--bottom .global-footer__nav {
+  grid-area: legal-links;
+
+  @container global-footer (min-width: 65em) {
+    display: grid;
+    grid-template-columns: subgrid;
+
+    ul {
+      display: grid;
+      grid-column: 1 / -1;
+      grid-template-columns: subgrid;
+    }
+  }
 }
 
 .global-footer__nav ul {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space--small);
   list-style: none;
   margin: 0;
   padding: 0;
