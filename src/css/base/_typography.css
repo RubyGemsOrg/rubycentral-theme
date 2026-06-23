@@ -4,11 +4,11 @@ html {
 }
 
 body {
+  color: var(--color--text-base);
   font-family: var(--font-family--body);
-  font-size: var(--font-size--body-default);
+  font-size: var(--font-size--body-base);
   font-weight: var(--font-weight--normal);
   line-height: var(--line-height--base);
-  color: var(--color--text-base);
 }
 
 :where(
@@ -29,7 +29,6 @@ h1 {
 a {
   color: var(--color--link);
   text-decoration-color: var(--color--link-accent);
-  text-decoration-thickness: 10%;
   transition: var(--transition-duration--base) text-decoration-color var(--transition-timing--base);
 
   &:hover {
@@ -44,17 +43,17 @@ label {
 }
 
 input {
-  font-size: var(--font-size--body-default);
+  font-size: var(--font-size--body-base);
 }
 
 legend {
-  font-size: var(--font-size--body-default);
+  font-size: var(--font-size--body-base);
   font-weight: var(--font-weight--bold);
 }
 
 hr {
-  width: 100%;
   border: var(--border--light);
+  width: 100%;
 }
 
 table {
@@ -82,31 +81,31 @@ small {
 }
 
 .heading-section {
-  font-family: var(--font-family--heading-default);
+  font-family: var(--font-family--heading-base);
   font-size: var(--font-size--heading-section);
   font-weight: var(--font-weight--normal);
 }
 
 .heading-subsection {
-  font-family: var(--font-family--heading-default);
+  font-family: var(--font-family--heading-base);
   font-size: var(--font-size--heading-subsection);
   font-weight: var(--font-weight--normal);
 }
 
 .heading-title-big {
-  font-family: var(--font-family--heading-default);
+  font-family: var(--font-family--heading-base);
   font-size: var(--font-size--heading-title-big);
   font-weight: var(--font-weight--normal);
 }
 
 .heading-title-small {
-  font-family: var(--font-family--heading-default);
+  font-family: var(--font-family--heading-base);
   font-size: var(--font-size--heading-title-small);
   font-weight: var(--font-weight--normal);
 }
 
 .body-callout {
-  font-family: var(--font-family--heading-default);
+  font-family: var(--font-family--heading-base);
   font-size: var(--font-size--body-callout);
   font-weight: var(--font-weight--normal);
 }

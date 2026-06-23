@@ -14,13 +14,16 @@
 @import "base/_forms.css" layer(base);
 @import "base/_lists.css" layer(base);
 @import "base/_media.css" layer(base);
+@import "base/_page.css" layer(base);
 @import "base/_tables.css" layer(base);
 @import "base/_typography.css" layer(base);
 
 /* Components */
 /* Import components from the component folder here in ABC order */
+@import "components/_global-footer.css" layer(components);
 @import "components/_global-nav.css" layer(components);
 
+@import "utilities/_grid.css" layer(utilities);
 @import "utilities/_hide-visually.css" layer(utilities);
 
 /* Vendors */

@@ -74,7 +74,7 @@ form {
   [type="week"]
 ) {
   background-color: var(--color--background-base);
-  border-radius: var(--border-radius--base);
+  border-radius: var(--border-radius--small);
   color: var(--color--text-base);
   padding-block: var(--space--small);
   padding-inline: var(--space--small);
@@ -174,7 +174,7 @@ textarea {
   appearance: none;
   background-color: var(--color--background-base);
   border: 0;
-  border-radius: var(--border-radius--base);
+  border-radius: var(--border-radius--small);
   height: var(--border-width--thick);
   width: 100%;
 

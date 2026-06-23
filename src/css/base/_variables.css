@@ -66,7 +66,7 @@
   --font-size--600: clamp(3rem, 1.875rem + 3vw, 3.75rem);
 
   --font-size--body-callout: var(--font-size--500);
-  --font-size--body-default: var(--font-size--100);
+  --font-size--body-base: var(--font-size--100);
   --font-size--body-large: var(--font-size--200);
   --font-size--body-small: var(--font-size--50);
   --font-size--heading-data: var(--font-size--200);
@@ -81,10 +81,10 @@
   --font-weight--bold: 700;
 
   --font-family--sans: system-ui, "Arial", "Helvetica", sans-serif;
-  --font-family--serif: Hoefler Text, Baskerville Old Face, Garamond, Times New Roman, serif;
+  --font-family--serif: hoefler text, baskerville old face, garamond, times new roman, serif;
   
   --font-family--body: var(--font-family--sans);
-  --font-family--heading-default: var(--font-family--serif);
+  --font-family--heading-base: var(--font-family--serif);
   --font-family--heading-overline: var(--font-family--sans);
   --font-family--heading-data: var(--font-family--sans);
 
