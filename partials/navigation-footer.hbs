@@ -1,7 +1,11 @@
 <ul class='navigation__list navigation__list--footer'>
   {{#foreach navigation}}
     <li class='navigation__item'>
-      <a href="{{url absolute='true'}}">{{label}}</a>
+      <a
+        class='navigation__link'
+        href="{{url absolute='true'}}"
+        {{#if current}}aria-current="page"{{/if}}
+      >{{label}}</a>
     </li>
   {{/foreach}}
 </ul>

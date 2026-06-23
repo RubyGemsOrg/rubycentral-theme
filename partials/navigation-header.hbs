@@ -4,7 +4,11 @@
     <ul class="global-nav__list">
       {{#foreach navigation}}
         <li class="global-nav__item">
-          <a class="global-nav__link" href="{{url absolute="true"}}">{{label}}</a>
+          <a
+            class="global-nav__link"
+            href="{{url absolute="true"}}"
+            {{#if current}}aria-current="page"{{/if}}
+          >{{label}}</a>
         </li>
       {{/foreach}}
       <li class="global-nav__item">

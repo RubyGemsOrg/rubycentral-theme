@@ -79,6 +79,7 @@
   text-decoration: 0;
   transition-property: border-bottom-color;
 
+  &[aria-current],
   &:hover {
     border-bottom-color: var(--color--primary-base);
   }
