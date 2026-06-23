@@ -51,6 +51,20 @@
   }
 }
 
+.button--icon {
+  background-color: var(--color--button-secondary);
+  border-radius: var(--border-radius--small);
+  color: var(--color--text-base);
+  padding-block: var(--space--small);
+  padding-inline: var(--space--small);
+
+  &:hover,
+  &:focus-visible {
+    --bg-color: var(--color--button-primary-hover);
+    color: var(--color--button-primary-hover);
+  }
+}
+
 .button:disabled {
   cursor: not-allowed;
 }

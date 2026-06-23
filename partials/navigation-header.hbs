@@ -1,10 +1,14 @@
 <header class="global-nav is-closed" data-global-nav>
-  <a href="/" class="global-nav__logo">{{> "logo"}}</a>
+  <a href="/" class="global-nav__logo">{{> "icons/logo"}}</a>
   <nav id="global-nav-menu" class="global-nav__links" aria-label="Primary">
     <ul class="global-nav__list">
       {{#foreach navigation}}
         <li class="global-nav__item">
-          <a class="global-nav__link" href="{{url absolute="true"}}">{{label}}</a>
+          <a
+            class="global-nav__link"
+            href="{{url absolute="true"}}"
+            {{#if current}}aria-current="page"{{/if}}
+          >{{label}}</a>
         </li>
       {{/foreach}}
       <li class="global-nav__item">
@@ -14,12 +18,12 @@
   </nav>
   <button
     type="button"
-    class="global-nav__menu-toggle"
+    class="button button--icon global-nav__menu-toggle"
     data-global-nav-toggle
     aria-expanded="false"
     aria-controls="global-nav-menu"
     aria-label="Toggle navigation"
   >
-  Menu
+  {{> "icons/menu"}}
   </button>
 </header>
