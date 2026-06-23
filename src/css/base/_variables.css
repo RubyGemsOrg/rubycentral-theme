@@ -46,44 +46,60 @@
   --color--background-secondary: var(--color--gray-base);
   --color--background-dark: var(--color--navy-dark);
 
+  --color--button-primary: var(--color--primary-inverse-dark);
+  --color--button-primary-hover: var(--color--primary-base);
+
+  --color--button-secondary: var(--color--background-base);
+  --color--button-secondary-hover: var(--color--primary-inverse-dark);
+
   --color--focus: var(--color--primary-dark);
-  --color--link: var(--color--primary-base);
-  --color--link-hover: var(--color--primary-dark);
+  --color--link: var(--color--text-base);
+  --color--link-accent: var(--color--primary-base);
 
   /* Font & typography */
   --font-size--50: 0.875rem;
-  --font-size--100: 1rem;
-  --font-size--200: 1.25rem;
-  --font-size--300: 1.5rem;
-  --font-size--400: 2.25rem;
-  --font-size--500: 3.75rem;
+  --font-size--100: 1.125rem;
+  --font-size--200: 1.5rem;
+  --font-size--300: 2rem;
+  --font-size--400: clamp(2rem, 1.25rem + 2vw, 2.5rem);
+  --font-size--500: clamp(2.5rem, 1.375rem + 3vw, 3.25rem);
+  --font-size--600: clamp(3rem, 1.875rem + 3vw, 3.75rem);
 
-  --font-size--body: var(--font-size--100);
-  --font-size--small: var(--font-size--50);
+  --font-size--body-callout: var(--font-size--500);
+  --font-size--body-default: var(--font-size--100);
+  --font-size--body-large: var(--font-size--200);
+  --font-size--body-small: var(--font-size--50);
+  --font-size--heading-data: var(--font-size--200);
+  --font-size--heading-overline: var(--font-size--300);
+  --font-size--heading-section: var(--font-size--400);
+  --font-size--heading-subsection: var(--font-size--300);
+  --font-size--heading-title-big: var(--font-size--600);
+  --font-size--heading-title-small: var(--font-size--500);
   --font-size--ui: var(--font-size--100);
-  --font-size--section-title: var(--font-size--200);
-  --font-size--subheader: var(--font-size--300);
-  --font-size--header: var(--font-size--400);
-  --font-size--display: var(--font-size--500);
 
   --font-weight--normal: 400;
   --font-weight--bold: 700;
 
-  --font-family--body: system-ui, "Arial", "Helvetica", sans-serif;
+  --font-family--sans: system-ui, "Arial", "Helvetica", sans-serif;
+  --font-family--serif: Hoefler Text, Baskerville Old Face, Garamond, Times New Roman, serif;
+  
+  --font-family--body: var(--font-family--sans);
+  --font-family--heading-default: var(--font-family--serif);
+  --font-family--heading-overline: var(--font-family--sans);
+  --font-family--heading-data: var(--font-family--sans);
 
   --line-height--base: 1.5;
   --line-height--tight: 1.2;
 
   /* Borders */
-
   --border-radius--small: 0.25rem;
-  --border-radius--base: 0.5rem;
-  --border-radius--large: 1.5rem;
-  --border-radius--pill: 4rem;
+  --border-radius--base: 1rem;
+  --border-radius--large: 2rem;
+  --border-radius--x-large: 6.25rem;
   --border-radius--circle: 100%;
 
   --border-width--base: 1px;
-  --border-width--thick: 4px;
+  --border-width--thick: 2px;
 
   --border--base: var(--border-width--base) solid var(--color--primary-base);
   --border--light: var(--border-width--base) solid var(--color--gray-base);
