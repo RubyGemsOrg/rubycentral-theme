@@ -1,8 +1,8 @@
 .hero {
   background-color: var(--color--theme-background);
   border-bottom-left-radius: var(--border-radius--x-large);
-  padding-block: var(--space--x-large);
   margin-inline: calc(-1 * var(--space--medium));
+  padding-block: var(--space--x-large);
   padding-inline: var(--space--medium);
 }
 
@@ -10,6 +10,10 @@
   display: flex;
   flex-direction: column;
   gap: var(--space--medium);
+
+  h1, h2 {
+    margin: 0;
+  }
 
   h1 {
     font-family: var(--font-family--heading-overline);

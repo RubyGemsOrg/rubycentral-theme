@@ -38,19 +38,7 @@
       {{content}}
     {{/foreach}}
   {{/get}}
-  <ul class="home-involvement__list" role="list">
-    {{#get 'pages' filter='tag:hash-home-involvement' limit='6'}}
-      {{#foreach pages}}
-        <li class="home-involvement__item">
-          <a class="home-involvement__link" href="{{custom_excerpt}}">
-            <span class="home-involvement__title">{{title}}</span>
-            <div class="home-involvement__description">{{content}}</div>
-            {{> "icons/arrow-circle"}}
-          </a>
-        </li>
-      {{/foreach}}
-    {{/get}}
-  </ul>
+  {{> "components/link-list" links="tag:hash-home-involvement" description=true modifier="feature"}}
 </section>
 
 <section class="home-pillars" aria-labelledby="home-pillars-heading">

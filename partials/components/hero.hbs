@@ -8,20 +8,8 @@
     {{/get}}
   </div>
   {{#if links}}
-    <nav class="hero__links u-grid-span-2" aria-label="{{linksLabel}}">
-      <p class="hero__links-label">{{linksLabel}}</p>
-      <ul>
-        {{#get 'pages' filter=links limit='8' order='published_at asc'}}
-          {{#foreach pages}}
-            <li>
-              <a href="{{custom_excerpt}}">
-                {{title}}
-                {{> "icons/arrow"}}
-              </a>
-            </li>
-          {{/foreach}}
-        {{/get}}
-      </ul>
-    </nav>
+    <div class="hero__links u-grid-span-2">
+      {{> "components/link-list" links=links label=linksLabel}}
+    </div>
   {{/if}}
 </section>

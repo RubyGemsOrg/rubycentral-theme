@@ -1,0 +1,25 @@
+{{!-- params: links (tag filter, required), label (optional list header text), description (boolean renders each item's content as its own paragraph), modifier (optional class, e.g. "feature") --}}
+{{#if label}}
+  <nav class="link-list {{modifier}}" aria-label="{{label}}">
+    <p class="link-list__label">{{label}}</p>
+{{else}}
+  <nav class="link-list {{modifier}}">
+{{/if}}
+    <ul class="link-list__items" role="list">
+      {{#get 'pages' filter=links limit='8' order='published_at asc'}}
+        {{#foreach pages}}
+          <li class="link-list__item">
+            <a class="link-list__link" href="{{custom_excerpt}}">
+              <p class="link-list__title">{{title}}</p>
+              {{#if ../../description}}
+                <div class="link-list__description">{{content}}</div>
+              {{/if}}
+              <div class="link-list__arrow">
+                {{> "icons/arrow"}}
+              </div>
+            </a>
+          </li>
+        {{/foreach}}
+      {{/get}}
+    </ul>
+  </nav>
