@@ -55,26 +55,32 @@
   --font-size--100: 1.125rem;
   --font-size--200: 1.5rem;
   --font-size--300: 2rem;
-  --font-size--400: 2.5rem;
-  --font-size--500: 3.25rem;
-  --font-size--600: 3.75rem;
+  --font-size--400: clamp(2rem, 1.25rem + 2vw, 2.5rem);
+  --font-size--500: clamp(2.5rem, 1.375rem + 3vw, 3.25rem);
+  --font-size--600: clamp(3rem, 1.875rem + 3vw, 3.75rem);
 
+  --font-size--body-callout: var(--font-size--500);
   --font-size--body-default: var(--font-size--100);
-  --font-size--body-small: var(--font-size--50);
   --font-size--body-large: var(--font-size--200);
+  --font-size--body-small: var(--font-size--50);
   --font-size--heading-data: var(--font-size--200);
   --font-size--heading-overline: var(--font-size--300);
   --font-size--heading-section: var(--font-size--400);
   --font-size--heading-subsection: var(--font-size--300);
-  --font-size--title-big: var(--font-size--600);
-  --font-size--title-small: var(--font-size--500);
+  --font-size--heading-title-big: var(--font-size--600);
+  --font-size--heading-title-small: var(--font-size--500);
   --font-size--ui: var(--font-size--100);
 
   --font-weight--normal: 400;
   --font-weight--bold: 700;
 
-  --font-family--body: system-ui, "Arial", "Helvetica", sans-serif;
-  --font-family--heading: Hoefler Text, Baskerville Old Face, Garamond, Times New Roman, serif;
+  --font-family--sans: system-ui, "Arial", "Helvetica", sans-serif;
+  --font-family--serif: Hoefler Text, Baskerville Old Face, Garamond, Times New Roman, serif;
+  
+  --font-family--body: var(--font-family--sans);
+  --font-family--heading-default: var(--font-family--serif);
+  --font-family--heading-overline: var(--font-family--sans);
+  --font-family--heading-data: var(--font-family--sans);
 
   --line-height--base: 1.5;
   --line-height--tight: 1.2;
