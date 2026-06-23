@@ -29,7 +29,7 @@ table {
 th {
   background-color: var(--color--background-secondary);
   border-top: var(--border--light);
-  font-size: var(--font-size--small);
+  font-size: var(--font-size--body-small);
   font-weight: var(--font-weight--bold);
   text-align: start;
 }

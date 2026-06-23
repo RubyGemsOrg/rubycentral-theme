@@ -52,24 +52,29 @@
 
   /* Font & typography */
   --font-size--50: 0.875rem;
-  --font-size--100: 1rem;
-  --font-size--200: 1.25rem;
-  --font-size--300: 1.5rem;
-  --font-size--400: 2.25rem;
-  --font-size--500: 3.75rem;
+  --font-size--100: 1.125rem;
+  --font-size--200: 1.5rem;
+  --font-size--300: 2rem;
+  --font-size--400: 2.5rem;
+  --font-size--500: 3.25rem;
+  --font-size--600: 3.75rem;
 
-  --font-size--body: var(--font-size--100);
-  --font-size--small: var(--font-size--50);
+  --font-size--body-default: var(--font-size--100);
+  --font-size--body-small: var(--font-size--50);
+  --font-size--body-large: var(--font-size--200);
+  --font-size--heading-data: var(--font-size--200);
+  --font-size--heading-overline: var(--font-size--300);
+  --font-size--heading-section: var(--font-size--400);
+  --font-size--heading-subsection: var(--font-size--300);
+  --font-size--title-big: var(--font-size--600);
+  --font-size--title-small: var(--font-size--500);
   --font-size--ui: var(--font-size--100);
-  --font-size--section-title: var(--font-size--200);
-  --font-size--subheader: var(--font-size--300);
-  --font-size--header: var(--font-size--400);
-  --font-size--display: var(--font-size--500);
 
   --font-weight--normal: 400;
   --font-weight--bold: 700;
 
   --font-family--body: system-ui, "Arial", "Helvetica", sans-serif;
+  --font-family--heading: Hoefler Text, Baskerville Old Face, Garamond, Times New Roman, serif;
 
   --line-height--base: 1.5;
   --line-height--tight: 1.2;
