@@ -32,8 +32,8 @@
 
 .global-footer__logo {
   color: var(--color--text-inverse);
-  place-self: start;
   grid-area: logo;
+  place-self: start;
 
   svg {
     height: auto;

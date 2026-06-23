@@ -40,7 +40,19 @@
 }
 
 .global-nav__logo {
+  color: var(--color--primary-base);
+  display: block;
   grid-area: logo;
+  transition-property: color;
+
+  &:hover {
+    color: var(--color--primary-dark);
+  }
+
+  svg {
+    height: auto;
+    width: 12rem;
+  }
 }
 
 .global-nav__menu-toggle {
@@ -73,30 +85,15 @@
 
 .global-nav__link {
   border-bottom: var(--border-width--thick) solid transparent;
-  font-weight: var(--font-weight--bold);
   font-size: var(--font-size--body-small);
-  padding-inline: var(--space--xx-small);
+  font-weight: var(--font-weight--bold);
   padding-block-end: var(--space--xx-small);
+  padding-inline: var(--space--xx-small);
   text-decoration: 0;
   transition-property: border-bottom-color;
 
   &[aria-current],
   &:hover {
     border-bottom-color: var(--color--primary-base);
-  }
-}
-
-.global-nav__logo {
-  color: var(--color--primary-base);
-  display: block;
-  transition-property: color;
-
-  &:hover {
-    color: var(--color--primary-dark);
-  }
-
-  svg {
-    height: auto;
-    width: 12rem;
   }
 }

@@ -81,7 +81,7 @@
   --font-weight--bold: 700;
 
   --font-family--sans: system-ui, "Arial", "Helvetica", sans-serif;
-  --font-family--serif: Hoefler Text, Baskerville Old Face, Garamond, Times New Roman, serif;
+  --font-family--serif: hoefler text, baskerville old face, garamond, times new roman, serif;
   
   --font-family--body: var(--font-family--sans);
   --font-family--heading-base: var(--font-family--serif);
