@@ -97,7 +97,7 @@
   grid-area: arrow;
 
   svg {
-    width: var(--space--medium);
     transform: rotate(-45deg);
+    width: var(--space--medium);
   }
 }
