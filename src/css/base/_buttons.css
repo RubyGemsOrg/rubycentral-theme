@@ -1,7 +1,6 @@
 .button {
   align-items: center;
-  border: var(--border-width--base) solid transparent;
-  border-radius: var(--border-radius--base);
+  border: var(--border-width--thick) solid transparent;
   cursor: pointer;
   display: flex;
   font-size: var(--font-size--ui);
@@ -9,7 +8,7 @@
   gap: var(--space--x-small);
   justify-content: center;
   line-height: 1;
-  padding-block: var(--space--small);
+  padding-block: var(--space--base);
   padding-inline: var(--space--medium);
   text-align: center;
   text-decoration: none;
@@ -24,25 +23,31 @@
 }
 
 .button--primary {
-  background-color: var(--color--primary-base);
-  color: var(--color--text-inverse);
+  --bg-color: var(--color--button-primary);
+
+  background-color: var(--bg-color);
+  border-radius: var(--border-radius--base) var(--border-radius--small) var(--border-radius--base) var(--border-radius--small);
+  color: contrast-color(var(--bg-color));
 
   &:hover,
   &:focus-visible {
-    color: var(--color--text-inverse);
-    background-color: var(--color--primary-dark);
+    --bg-color: var(--color--button-primary-hover);
+    color: contrast-color(var(--bg-color));
   }
 }
 
 .button--secondary {
-  background-color: var(--color--background-base);
-  border-color: var(--color--primary-base);
-  color: var(--color--text-base);
+  --bg-color: var(--color--button-secondary);
+
+  background-color: var(--bg-color);
+  border-color: var(--color--button-secondary-hover);
+  border-radius: var(--border-radius--small) var(--border-radius--base) var(--border-radius--small) var(--border-radius--base);
+  color: contrast-color(var(--bg-color));
 
   &:hover,
   &:focus-visible {
-    background-color: var(--color--primary-dark);
-    color: var(--color--text-inverse);
+    --bg-color: var(--color--button-secondary-hover);
+    color: contrast-color(var(--bg-color));
   }
 }
 

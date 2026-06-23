@@ -46,6 +46,12 @@
   --color--background-secondary: var(--color--gray-base);
   --color--background-dark: var(--color--navy-dark);
 
+  --color--button-primary: var(--color--primary-inverse-dark);
+  --color--button-primary-hover: var(--color--primary-base);
+
+  --color--button-secondary: var(--color--background-base);
+  --color--button-secondary-hover: var(--color--primary-inverse-dark);
+
   --color--focus: var(--color--primary-dark);
   --color--link: var(--color--primary-base);
   --color--link-hover: var(--color--primary-dark);
@@ -93,7 +99,7 @@
   --border-radius--circle: 100%;
 
   --border-width--base: 1px;
-  --border-width--thick: 4px;
+  --border-width--thick: 2px;
 
   --border--base: var(--border-width--base) solid var(--color--primary-base);
   --border--light: var(--border-width--base) solid var(--color--gray-base);
