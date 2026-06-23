@@ -1,0 +1,26 @@
+{{!-- params: copy, primary, secondary (optional) — each a Ghost page title filter, e.g. "title:'About::Callout'" --}}
+<section class="cta">
+  {{#get 'pages' filter=copy limit='1'}}
+    {{#foreach pages}}
+      {{content}}
+    {{/foreach}}
+  {{/get}}
+  <div class="cta__actions">
+    <div class="cta__primary">
+      {{#get 'pages' filter=primary limit='1'}}
+        {{#foreach pages}}
+          {{content}}
+        {{/foreach}}
+      {{/get}}
+    </div>
+    {{#if secondary}}
+      <div class="cta__secondary">
+        {{#get 'pages' filter=secondary limit='1'}}
+          {{#foreach pages}}
+            {{content}}
+          {{/foreach}}
+        {{/get}}
+      </div>
+    {{/if}}
+  </div>
+</section>
