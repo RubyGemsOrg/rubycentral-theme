@@ -69,6 +69,10 @@
   }
 }
 
+.global-nav__logo {
+  color: var(--color--primary-base);
+}
+
 body:has(.global-nav) {
   container: global-nav / inline-size;
 }
