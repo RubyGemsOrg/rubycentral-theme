@@ -1,4 +1,4 @@
-{{!-- params: copy, ctas, image — homepage hero only (text+image, no anchor links) --}}
+{{!-- params: copy, primary, secondary (optional), image — homepage hero only (text+image, no anchor links) --}}
 <section class="hero hero--home u-grid">
   <div class="hero__content u-grid-span-3">
     {{#get 'pages' filter=copy limit='1'}}
@@ -6,13 +6,7 @@
         {{content}}
       {{/foreach}}
     {{/get}}
-    <div class="hero__ctas">
-      {{#get 'pages' filter=ctas limit='2'}}
-        {{#foreach pages}}
-          {{content}}
-        {{/foreach}}
-      {{/get}}
-    </div>
+    {{> "components/cta-buttons" primary=primary secondary=secondary}}
   </div>
   <div class="hero__image u-grid-span-4">
     {{#get 'pages' filter=image limit='1' include='feature_image'}}

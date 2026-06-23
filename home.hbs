@@ -1,6 +1,6 @@
 {{!< default}}
 
-{{> "components/hero-home" copy="title:'Home::Hero - Body'" ctas="tag:hash-home-hero-cta" image="title:'Home::Hero - Image'"}}
+{{> "components/hero-home" copy="title:'Home::Hero - Body'" primary="title:'Home::Hero - Button Primary'" secondary="title:'Home::Hero - Button Secondary'" image="title:'Home::Hero - Image'"}}
 
 <section class="home-stats" aria-label="Two decades of showing up for Ruby">
   {{#get 'pages' filter="title:'Home::Stats - Heading'" limit='1'}}
@@ -38,7 +38,7 @@
       {{content}}
     {{/foreach}}
   {{/get}}
-  {{> "components/link-list" links="tag:hash-home-involvement" description=true modifier="feature"}}
+  {{> "components/link-list" links="tag:hash-home-involvement" description=true feature=true}}
 </section>
 
 <section class="home-pillars" aria-labelledby="home-pillars-heading">

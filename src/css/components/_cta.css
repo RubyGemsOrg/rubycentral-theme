@@ -20,8 +20,3 @@
   gap: var(--space--medium);
   max-width: 85ch;
 }
-
-.cta__actions {
-  display: flex;
-  gap: var(--space--base);
-}

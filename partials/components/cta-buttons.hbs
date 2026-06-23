@@ -1,0 +1,21 @@
+{{!-- params: primary (optional, page filter), secondary (optional, page filter) — both optional, container always renders --}}
+<div class="cta-buttons">
+  {{#if primary}}
+    <div class="cta-buttons__button cta-buttons__primary">
+      {{#get 'pages' filter=primary limit='1'}}
+        {{#foreach pages}}
+          {{content}}
+        {{/foreach}}
+      {{/get}}
+    </div>
+  {{/if}}
+  {{#if secondary}}
+    <div class="cta-buttons__button cta-buttons__secondary">
+      {{#get 'pages' filter=secondary limit='1'}}
+        {{#foreach pages}}
+          {{content}}
+        {{/foreach}}
+      {{/get}}
+    </div>
+  {{/if}}
+</div>

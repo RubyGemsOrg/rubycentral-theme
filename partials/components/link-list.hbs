@@ -1,11 +1,9 @@
-{{!-- params: links (tag filter, required), label (optional list header text), description (boolean renders each item's content as its own paragraph), modifier (optional class, e.g. "feature") --}}
-{{#if label}}
-  <nav class="link-list {{modifier}}" aria-label="{{label}}">
+{{!-- params: links (tag filter, required), label (optional list header text), description (boolean renders each item's content as its own paragraph), feature (boolean, adds link-list--feature) --}}
+  <nav class="link-list{{#if feature}} link-list--feature{{/if}}" aria-label="{{label}}">
+    {{#if label}}
     <p class="link-list__label">{{label}}</p>
-{{else}}
-  <nav class="link-list {{modifier}}">
-{{/if}}
-    <ul class="link-list__items" role="list">
+  {{/if}}
+    <ul class="link-list__items">
       {{#get 'pages' filter=links limit='8' order='published_at asc'}}
         {{#foreach pages}}
           <li class="link-list__item">
