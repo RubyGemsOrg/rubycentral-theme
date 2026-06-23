@@ -1,31 +1,6 @@
 {{!< default}}
 
-<section class="home-hero">
-  <div class="home-hero__content">
-    {{#get 'pages' filter="title:'Home::Hero - Body'" limit='1'}}
-      {{#foreach pages}}
-        {{content}}
-      {{/foreach}}
-    {{/get}}
-    <div class="home-hero__ctas">
-      {{#get 'pages' filter='tag:hash-home-hero-cta' limit='2'}}
-        {{#foreach pages}}
-          {{content}}
-        {{/foreach}}
-      {{/get}}
-    </div>
-  </div>
-
-  {{#get 'pages' filter="title:'Home::Hero - Image'" limit='1' include='feature_image'}}
-    {{#foreach pages}}
-      {{#if feature_image}}
-        <figure class="home-hero__image">
-          <img src="{{feature_image}}" alt="{{custom_excerpt}}" />
-        </figure>
-      {{/if}}
-    {{/foreach}}
-  {{/get}}
-</section>
+{{> "components/hero-home" copy="title:'Home::Hero - Body'" ctas="tag:hash-home-hero-cta" image="title:'Home::Hero - Image'"}}
 
 <section class="home-stats" aria-label="Two decades of showing up for Ruby">
   {{#get 'pages' filter="title:'Home::Stats - Heading'" limit='1'}}
