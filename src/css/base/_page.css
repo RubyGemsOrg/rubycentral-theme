@@ -1,3 +1,7 @@
 body:has(.global-nav, .global-footer) {
   container: global-nav global-footer / inline-size;
 }
+
+main {
+  padding-inline: var(--space--medium);
+}

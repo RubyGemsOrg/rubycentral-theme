@@ -150,15 +150,4 @@
   </div>
 </section>
 
-<aside class="home-transparency" aria-label="Transparency and governance">
-  {{#get 'pages' filter="title:'Home::Transparency'" limit='1'}}
-    {{#foreach pages}}
-      {{content}}
-    {{/foreach}}
-  {{/get}}
-  {{#get 'pages' filter="title:'Home::Transparency - Button'" limit='1'}}
-    {{#foreach pages}}
-      {{content}}
-    {{/foreach}}
-  {{/get}}
-</aside>
+{{> "components/cta" copy="title:'Home::Transparency'" primary="title:'Home::Transparency - Button'" label="Transparency and governance"}}

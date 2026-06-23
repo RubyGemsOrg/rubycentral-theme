@@ -84,28 +84,26 @@ small {
   font-family: var(--font-family--heading-base);
   font-size: var(--font-size--heading-section);
   font-weight: var(--font-weight--normal);
+  line-height: var(--line-height--tight);
 }
 
 .heading-subsection {
   font-family: var(--font-family--heading-base);
   font-size: var(--font-size--heading-subsection);
   font-weight: var(--font-weight--normal);
+  line-height: var(--line-height--tight);
 }
 
 .heading-title-big {
   font-family: var(--font-family--heading-base);
   font-size: var(--font-size--heading-title-big);
   font-weight: var(--font-weight--normal);
+  line-height: var(--line-height--tight);
 }
 
 .heading-title-small {
   font-family: var(--font-family--heading-base);
   font-size: var(--font-size--heading-title-small);
   font-weight: var(--font-weight--normal);
-}
-
-.body-callout {
-  font-family: var(--font-family--heading-base);
-  font-size: var(--font-size--body-callout);
-  font-weight: var(--font-weight--normal);
+  line-height: var(--line-height--tight);
 }
