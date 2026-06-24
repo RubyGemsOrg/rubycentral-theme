@@ -1,4 +1,22 @@
 {{!< default}}
 {{> "components/hero" copy="title:'Community::Hero - Body'" links="tag:hash-community-hero-link" linksLabel="More in community"}}
+
+{{#> "components/section" id="membership" copy="title:'Community::Membership - Heading'" grid=true}}
+  {{> "components/info-block" copy="title:'Community::Membership - Ruby Friend'" primary="title:'Community::Membership - Ruby Friend - Button'" id=""}}
+  {{> "components/info-block" copy="title:'Community::Membership - CommunitySupporter'" primary="title:'Community::Membership - CommunitySupporter - Button'" id=""}}
+  {{> "components/info-block" copy="title:'Community::Membership - CommunitySupporterRubyGems'" primary="title:'Community::Membership - CommunitySupporterRubyGems - Button'" id=""}}
+{{/components/section}}
+
 {{> "components/cta" copy="title:'Community::Callout - Donate'" primary="title:'Community::Callout - Donate - Button'" label="Donate"}}
+
+{{> "components/info-block" copy="title:'Community::RubyFellows'" primary="title:'Community::RubyFellows - Button'" id="ruby-fellows" container=true}}
+
+{{> "components/info-block" copy="title:'Community::SteeringCommittees'" primary="title:'Community::SteeringCommittees - Button'" id="steering-committees" container=true inverse=true}}
+
+{{#> "components/section" id="volunteering" copy="title:'Community::Volunteering - Heading'" grid=true}}
+  {{> "components/info-block" copy="title:'Community::Volunteering - AtEvents'" primary="title:'Community::Volunteering - AtEvents - Button'" id=""}}
+  {{> "components/info-block" copy="title:'Community::Volunteering - InPrograms'" primary="title:'Community::Volunteering - InPrograms - Button'" secondary="title:'Community::Volunteering - InPrograms - Secondary Button'" id=""}}
+  {{> "components/info-block" copy="title:'Community::Volunteering - InOpenSource'" primary="title:'Community::Volunteering - InOpenSource - Button'" id=""}}
+{{/components/section}}
+
 {{> "components/cta" copy="title:'Community::Callout - Code Of Conduct'" primary="title:'Community::Callout - Code Of Conduct - Button'" label="Code of conduct"}}
