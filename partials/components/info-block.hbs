@@ -1,0 +1,17 @@
+<div class="info-block{{#if border}} info-block--border{{/if}}">
+  {{#get 'pages' filter=copy limit='1' include='feature_image'}}
+    {{#foreach pages}}
+      <div class="info-block__content">
+        {{content}}
+        {{#if ../../primary}}
+          {{> "components/cta-buttons" primary=../../primary secondary=../../secondary}}
+        {{/if}}
+      </div>
+      {{#if feature_image}}
+        <div class="info-block__image">
+          {{> "components/image" src=feature_image alt=custom_excerpt}}
+        </div>
+      {{/if}}
+    {{/foreach}}
+  {{/get}}
+</div>
