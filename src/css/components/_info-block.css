@@ -32,6 +32,7 @@
 .info-block__content {
   display: flex;
   flex-direction: column;
+  height: 100%;
   gap: var(--space--small);
 
   h2,
@@ -57,6 +58,10 @@
     font-size: var(--font-size--heading-subsection);
     font-weight: var(--font-weight--normal);
     line-height: var(--line-height--tight);
+  }
+
+  .cta-buttons {
+    margin-block-start: auto;
   }
 }
 
