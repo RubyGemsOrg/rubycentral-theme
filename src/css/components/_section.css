@@ -21,3 +21,7 @@
     line-height: var(--line-height--tight);
   }
 }
+
+.section__content--grid > * {
+  grid-column: span 2;
+}
