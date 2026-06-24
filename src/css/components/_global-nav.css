@@ -85,9 +85,14 @@
 }
 
 .global-nav__link {
+  background-color: transparent;
+  border: 0;
   border-bottom: var(--border-width--thick) solid transparent;
+  color: inherit;
+  cursor: pointer;
   font-size: var(--font-size--body-small);
   font-weight: var(--font-weight--bold);
+  line-height: 1;
   padding-block-end: var(--space--xx-small);
   padding-inline: var(--space--xx-small);
   text-decoration: 0;
