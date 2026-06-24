@@ -6,10 +6,20 @@
 
 {{> "components/info-block" copy="title:'About::Mission'" primary="title:'About::Mission - Button'" id="mission" container=true inverse=true}}
 
-{{#> "components/section" id="board-of-directors" copy="title:'About::BoardOfDirectors - Heading'"}}
+{{#> "components/section" id="board-of-directors" copy="title:'About::BoardOfDirectors - Heading'" grid=true}}
+  {{#get "pages" filter="tag:hash-board-of-directors" limit="all" order="published_at asc"}}
+    {{#foreach pages}}
+      {{> "components/team-member" name=title jobTitle=custom_excerpt image=feature_image}}
+    {{/foreach}}
+  {{/get}}
 {{/components/section}}
 
-{{#> "components/section" id="staff" copy="title:'About::Staff - Heading'"}}
+{{#> "components/section" id="staff" copy="title:'About::Staff - Heading'" grid=true}}
+  {{#get "pages" filter="tag:hash-staff" limit="all" order="published_at asc"}}
+    {{#foreach pages}}
+      {{> "components/team-member" name=title jobTitle=custom_excerpt image=feature_image}}
+    {{/foreach}}
+  {{/get}}
 {{/components/section}}
 
 {{> "components/cta" copy="title:'About::Callout'" primary="title:'About::Callout - Button'" label="Contact"}}
