@@ -22,10 +22,14 @@
 
   h2 {
     font-family: var(--font-family--heading-base);
-    font-size: var(--font-size--heading-title-big);
+    font-size: var(--font-size--heading-title-small);
     font-weight: var(--font-weight--normal);
     line-height: var(--line-height--tight);
   }
+}
+
+.hero--home h2 {
+  font-size: var(--font-size--heading-title-big);
 }
 
 .hero__image .image {
