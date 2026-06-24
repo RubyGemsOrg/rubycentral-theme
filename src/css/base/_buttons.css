@@ -1,5 +1,5 @@
 .button,
-.cta__actions a {
+.cta-buttons__button a {
   align-items: center;
   border: var(--border-width--thick) solid transparent;
   cursor: pointer;
@@ -24,7 +24,7 @@
 }
 
 .button--primary,
-.cta__primary a {
+.cta-buttons__primary a {
   --bg-color: var(--color--button-primary);
 
   background-color: var(--bg-color);
@@ -39,7 +39,7 @@
 }
 
 .button--secondary,
-.cta__secondary a {
+.cta-buttons__secondary a {
   --bg-color: var(--color--button-secondary);
 
   background-color: var(--bg-color);

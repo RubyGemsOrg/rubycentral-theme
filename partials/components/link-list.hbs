@@ -1,0 +1,22 @@
+<nav class="link-list{{#if feature}} link-list--feature{{/if}}" aria-label="{{label}}">
+  {{#if label}}
+  <p class="link-list__label">{{label}}</p>
+{{/if}}
+  <ul class="link-list__items">
+    {{#get 'pages' filter=links limit='8' order='published_at asc'}}
+      {{#foreach pages}}
+        <li class="link-list__item">
+          <a class="link-list__link" href="{{custom_excerpt}}">
+            <p class="link-list__title">{{title}}</p>
+            {{#if ../../description}}
+              <div class="link-list__description">{{content}}</div>
+            {{/if}}
+            <div class="link-list__arrow">
+              {{> "icons/arrow"}}
+            </div>
+          </a>
+        </li>
+      {{/foreach}}
+    {{/get}}
+  </ul>
+</nav>

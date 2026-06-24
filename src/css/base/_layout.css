@@ -1,3 +1,29 @@
 body {
-  margin: var(--space--page-margin-block) var(--space--page-margin-inline);
+  --color--theme-background: var(--color--background-base);
+
+  container: global-nav global-footer / inline-size;
+}
+
+main {
+  padding-inline: var(--space--page);
+}
+
+body.page-about {
+  --color--theme-background: var(--color--accent-purple-background);
+}
+
+body.page-community {
+  --color--theme-background: var(--color--accent-green-background);
+}
+
+body.page-programs {
+  --color--theme-background: var(--color--accent-blue-background);
+}
+
+body.page-events {
+  --color--theme-background: var(--color--accent-orange-background);
+}
+
+body.page-sponsors {
+  --color--theme-background: var(--color--accent-yellow-background);
 }

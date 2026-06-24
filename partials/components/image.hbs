@@ -1,0 +1,19 @@
+<picture class="image {{#if class}}image--{{class}}{{/if}}">
+  <img
+    srcset="{{img_url src size="xs"}} 100w,
+          {{img_url src size="s"}} 300w,
+          {{img_url src size="m"}} 500w,
+          {{img_url src size="l"}} 700w,
+          {{img_url src size="xl"}} 1000w,
+          {{img_url src size="xxl"}} 2000w"
+    {{#if hero}}
+      sizes="{{#if sizes}}{{sizes}}{{else}}100vw{{/if}}"
+      fetchpriority="high"
+    {{else}}
+      sizes="auto"
+      loading="lazy"
+    {{/if}}
+    src="{{img_url src size="l"}}"
+    alt="{{alt}}"
+  />
+</picture>

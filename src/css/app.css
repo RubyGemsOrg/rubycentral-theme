@@ -12,18 +12,23 @@
 @import "base/_buttons.css" layer(base);
 @import "base/_disclosures.css" layer(base);
 @import "base/_forms.css" layer(base);
+@import "base/_layout.css" layer(base);
 @import "base/_lists.css" layer(base);
 @import "base/_media.css" layer(base);
-@import "base/_page.css" layer(base);
 @import "base/_tables.css" layer(base);
 @import "base/_typography.css" layer(base);
 
 /* Components */
 /* Import components from the component folder here in ABC order */
 @import "components/_cta.css" layer(components);
+@import "components/_cta-buttons.css" layer(components);
 @import "components/_global-footer.css" layer(components);
 @import "components/_global-nav.css" layer(components);
+@import "components/_hero.css" layer(components);
+@import "components/_image.css" layer(components);
+@import "components/_link-list.css" layer(components);
 
+@import "utilities/_container.css" layer(utilities);
 @import "utilities/_grid.css" layer(utilities);
 @import "utilities/_hide-visually.css" layer(utilities);
 

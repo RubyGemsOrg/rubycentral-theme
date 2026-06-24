@@ -21,7 +21,8 @@ body {
   font-weight: var(--font-weight--bold);
 }
 
-h1 {
+h1,
+h2 {
   text-wrap: balance;
   text-wrap: pretty;
 }

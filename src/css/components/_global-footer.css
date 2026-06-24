@@ -1,13 +1,15 @@
 .global-footer {
   background-color: var(--color--background-dark);
   color: var(--color--text-inverse);
+  padding-block: var(--space--base);
+}
+
+.global-footer__inner {
   grid-template-areas:
     "logo"
     "links"
     "newsletter"
     "legal";
-  padding-block: var(--space--base);
-  padding-inline: var(--space--medium);
 
   @container global-footer (min-width: 65em) {
     grid-template-areas:

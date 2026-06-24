@@ -1,0 +1,28 @@
+.image {
+  background-color: var(--color--primary-inverse);
+  border-radius: var(--border-radius--base);
+  height: 100%;
+
+  img {
+    filter: grayscale(1);
+    height: 100%;
+    mix-blend-mode: screen;
+    object-fit: cover;
+  }
+}
+
+.image--bottom-left {
+  border-bottom-left-radius: var(--border-radius--x-large);
+}
+
+.image--bottom-right {
+  border-bottom-right-radius: var(--border-radius--x-large);
+}
+
+.image--top-left {
+  border-top-left-radius: var(--border-radius--x-large);
+}
+
+.image--top-right {
+  border-top-right-radius: var(--border-radius--x-large);
+}
