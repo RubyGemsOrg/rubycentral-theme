@@ -80,13 +80,14 @@
   --font-weight--normal: 400;
   --font-weight--bold: 700;
 
-  --font-family--sans: system-ui, "Arial", "Helvetica", sans-serif;
-  --font-family--serif: hoefler text, baskerville old face, garamond, times new roman, serif;
-  
-  --font-family--body: var(--font-family--sans);
-  --font-family--heading-base: var(--font-family--serif);
-  --font-family--heading-overline: var(--font-family--sans);
-  --font-family--heading-data: var(--font-family--sans);
+  --font-family--sans-fallback: system-ui, "Arial", "Helvetica", sans-serif;
+  --font-family--inter: "Inter", var(--font-family--sans-fallback);
+  --font-family--rubik: "Rubik", var(--font-family--sans-fallback);
+
+  --font-family--body: var(--font-family--inter);
+  --font-family--heading-base: var(--font-family--rubik);
+  --font-family--heading-overline: var(--font-family--rubik);
+  --font-family--heading-data: var(--font-family--rubik);
 
   --line-height--base: 1.5;
   --line-height--tight: 1.2;
