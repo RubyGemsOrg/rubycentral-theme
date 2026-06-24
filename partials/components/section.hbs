@@ -1,0 +1,15 @@
+{{!-- params: id (optional, anchor target — matches the hero link-list href), copy (optional, section-level overline+heading filter; omit when the wrapped content already provides its own heading, e.g. a standalone info-block) --}}
+<section{{#if id}} id="{{id}}"{{/if}} class="section">
+  {{#if copy}}
+    {{#get 'pages' filter=copy limit='1'}}
+      {{#foreach pages}}
+        <div class="section__heading">
+          {{content}}
+        </div>
+      {{/foreach}}
+    {{/get}}
+  {{/if}}
+  <div class="section__content">
+    {{> @partial-block}}
+  </div>
+</section>
