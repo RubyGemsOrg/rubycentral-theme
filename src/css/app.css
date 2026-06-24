@@ -28,7 +28,9 @@
 @import "components/_image.css" layer(components);
 @import "components/_info-block.css" layer(components);
 @import "components/_link-list.css" layer(components);
+@import "components/_section.css" layer(components);
 
+/* Utilities */
 @import "utilities/_container.css" layer(utilities);
 @import "utilities/_grid.css" layer(utilities);
 @import "utilities/_hide-visually.css" layer(utilities);
