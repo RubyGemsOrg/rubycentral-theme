@@ -25,7 +25,7 @@
     {{#get 'pages' filter='tag:hash-home-gallery-image' limit='5' include='feature_image'}}
       {{#foreach pages}}
         {{#if feature_image}}
-          <img class="home-gallery__item" src="{{feature_image}}" alt="{{title}}" />
+          {{> "components/image" src=feature_image alt=title class="home-gallery__item"}}
         {{/if}}
       {{/foreach}}
     {{/get}}

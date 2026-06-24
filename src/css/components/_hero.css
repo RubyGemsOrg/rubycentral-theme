@@ -27,3 +27,7 @@
     line-height: var(--line-height--tight);
   }
 }
+
+.hero__image .image {
+  background-color: var(--color--primary-base);
+}
