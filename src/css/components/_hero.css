@@ -29,6 +29,7 @@
 
 .hero--home {
   min-width: 0;
+  padding-block-end: 0;
 }
 
 .hero--home h2 {

@@ -3,11 +3,11 @@
 {{> "components/hero-home" copy="title:'Home::Hero - Body'" primary="title:'Home::Hero - Button Primary'" secondary="title:'Home::Hero - Button Secondary'"}}
 
 <section class="home-gallery u-container" aria-label="Community photos">
-  <figure class="home-gallery__items">
-    {{#get 'pages' filter='tag:hash-home-gallery-image' limit='5' include='feature_image'}}
+  <figure class="home-gallery__items u-grid">
+    {{#get 'pages' filter='tag:hash-home-gallery-image' limit='5' include='feature_image' order='published_at asc'}}
       {{#foreach pages}}
         {{#if feature_image}}
-          {{> "components/image" src=feature_image alt=title class="home-gallery__item"}}
+          {{> "components/image" src=feature_image alt=custom_excerpt}}
         {{/if}}
       {{/foreach}}
     {{/get}}

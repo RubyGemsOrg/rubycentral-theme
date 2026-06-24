@@ -12,7 +12,7 @@ body {
 main {
   display: grid;
   gap: var(--space--xxx-large);
-  margin-block-end: var(--space--xxx-large);
+  margin-block-end: var(--space--xx-large);
   padding-inline: var(--space--page);
 }
 
