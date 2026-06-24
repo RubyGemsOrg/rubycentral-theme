@@ -1,24 +1,6 @@
 {{!< default}}
 
-{{> "components/hero-home" copy="title:'Home::Hero - Body'" primary="title:'Home::Hero - Button Primary'" secondary="title:'Home::Hero - Button Secondary'" image="title:'Home::Hero - Image'"}}
-
-<section class="home-stats u-container" aria-label="Two decades of showing up for Ruby">
-  {{#get 'pages' filter="title:'Home::Stats - Heading'" limit='1'}}
-    {{#foreach pages}}
-      {{content}}
-    {{/foreach}}
-  {{/get}}
-  <dl class="home-stats__list">
-    {{#get 'pages' filter='tag:hash-home-stat' limit='8'}}
-      {{#foreach pages}}
-        <div class="home-stats__item">
-          <dt class="home-stats__value">{{title}}</dt>
-          <dd class="home-stats__description">{{custom_excerpt}}</dd>
-        </div>
-      {{/foreach}}
-    {{/get}}
-  </dl>
-</section>
+{{> "components/hero-home" copy="title:'Home::Hero - Body'" primary="title:'Home::Hero - Button Primary'" secondary="title:'Home::Hero - Button Secondary'"}}
 
 <section class="home-gallery u-container" aria-label="Community photos">
   <figure class="home-gallery__items">

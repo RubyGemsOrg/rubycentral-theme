@@ -1,6 +1,5 @@
 .hero {
   background-color: var(--color--theme-background);
-  border-bottom-left-radius: var(--border-radius--x-large);
   margin-inline: calc(-1 * var(--space--medium));
   padding-block: var(--space--x-large);
 }
@@ -28,10 +27,10 @@
   }
 }
 
-.hero--home h2 {
-  font-size: var(--font-size--heading-title-big);
+.hero--home {
+  min-width: 0;
 }
 
-.hero__image .image {
-  border-bottom-left-radius: var(--border-radius--x-large);
+.hero--home h2 {
+  font-size: var(--font-size--heading-title-big);
 }
