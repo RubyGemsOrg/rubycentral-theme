@@ -1,6 +1,6 @@
 @font-face {
   font-display: swap;
-  font-family: "Rubik";
+  font-family: Rubik;
   font-style: normal;
   font-weight: 300 900;
   src: url("../fonts/Rubik-Variable.woff2") format("woff2");
@@ -8,7 +8,7 @@
 
 @font-face {
   font-display: swap;
-  font-family: "Inter";
+  font-family: Inter;
   font-style: normal;
   font-weight: 100 900;
   src: url("../fonts/Inter-Variable.woff2") format("woff2");

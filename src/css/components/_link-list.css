@@ -1,7 +1,7 @@
 .link-list {
   display: flex;
-  font-family: var(--font-family--heading);
   flex-direction: column;
+  font-family: var(--font-family--heading);
   gap: var(--space--xx-small);
 
   p {
