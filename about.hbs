@@ -1,6 +1,15 @@
 {{!< default}}
 {{> "components/hero" copy="title:'About::Hero - Body'" links="tag:hash-about-hero-link" linksLabel="More in about"}}
 
+{{#> "components/section" id="history" copy="title:'About::History - Heading'"}}
+{{/components/section}}
+
 {{> "components/info-block" copy="title:'About::Mission'" primary="title:'About::Mission - Button'" id="mission" container=true inverse=true}}
+
+{{#> "components/section" id="board-of-directors" copy="title:'About::BoardOfDirectors - Heading'"}}
+{{/components/section}}
+
+{{#> "components/section" id="staff" copy="title:'About::Staff - Heading'"}}
+{{/components/section}}
 
 {{> "components/cta" copy="title:'About::Callout'" primary="title:'About::Callout - Button'" label="Contact"}}

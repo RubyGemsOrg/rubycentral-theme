@@ -25,14 +25,25 @@
   padding: var(--space--base);
 }
 
-.info-block--inverse .info-block__image {
+.info-block__image {
   order: -1;
+
+  .image {
+    height: 18rem;
+  }
+}
+
+@container info-block (min-width: 65em) {
+  .info-block:not(.info-block--inverse) .info-block__image {
+    order: 1;
+  }
 }
 
 .info-block__content {
   display: flex;
   flex-direction: column;
   gap: var(--space--small);
+  height: 100%;
 
   h2,
   h3,
@@ -57,6 +68,10 @@
     font-size: var(--font-size--heading-subsection);
     font-weight: var(--font-weight--normal);
     line-height: var(--line-height--tight);
+  }
+
+  .cta-buttons {
+    margin-block-start: auto;
   }
 }
 
