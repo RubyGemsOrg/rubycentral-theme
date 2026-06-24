@@ -6,7 +6,7 @@
   padding: var(--space--xx-large);
 
   p {
-    font-family: var(--font-family--heading-base);
+    font-family: var(--font-family--heading);
     font-size: var(--font-size--body-callout);
     font-weight: var(--font-weight--normal);
     line-height: var(--line-height--tight);

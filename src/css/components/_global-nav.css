@@ -74,6 +74,7 @@
 }
 
 .global-nav__list {
+  align-items: baseline;
   display: flex;
   flex-direction: column;
   gap: var(--space--large);

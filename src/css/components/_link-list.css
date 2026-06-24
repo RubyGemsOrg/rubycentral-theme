@@ -1,6 +1,7 @@
 .link-list {
   display: flex;
   flex-direction: column;
+  font-family: var(--font-family--heading);
   gap: var(--space--xx-small);
 
   p {
@@ -60,7 +61,6 @@
 }
 
 .link-list--feature .link-list__title {
-  font-family: var(--font-family--heading-base);
   font-size: var(--font-size--heading-subsection);
   font-weight: var(--font-weight--normal);
   grid-area: title;
