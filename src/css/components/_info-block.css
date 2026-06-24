@@ -58,13 +58,13 @@
   }
 
   h2 {
-    font-family: var(--font-family--heading-overline);
+    font-family: var(--font-family--heading);
     font-size: var(--font-size--heading-overline);
     font-weight: var(--font-weight--bold);
   }
 
   h3 {
-    font-family: var(--font-family--heading-base);
+    font-family: var(--font-family--heading);
     font-size: var(--font-size--heading-subsection);
     font-weight: var(--font-weight--normal);
     line-height: var(--line-height--tight);
@@ -77,13 +77,13 @@
 
 .info-block__content:has(> h4) {
   h3 {
-    font-family: var(--font-family--heading-overline);
+    font-family: var(--font-family--heading);
     font-size: var(--font-size--heading-overline);
     font-weight: var(--font-weight--bold);
   }
 
   h4 {
-    font-family: var(--font-family--heading-base);
+    font-family: var(--font-family--heading);
     font-size: var(--font-size--heading-subsection);
     font-weight: var(--font-weight--normal);
     line-height: var(--line-height--tight);

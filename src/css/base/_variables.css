@@ -78,16 +78,15 @@
   --font-size--ui: var(--font-size--100);
 
   --font-weight--normal: 400;
-  --font-weight--bold: 700;
+  --font-weight--bold: 600;
 
   --font-family--sans-fallback: system-ui, "Arial", "Helvetica", sans-serif;
   --font-family--inter: "Inter", var(--font-family--sans-fallback);
   --font-family--rubik: "Rubik", var(--font-family--sans-fallback);
 
   --font-family--body: var(--font-family--inter);
-  --font-family--heading-base: var(--font-family--rubik);
-  --font-family--heading-overline: var(--font-family--rubik);
-  --font-family--heading-data: var(--font-family--rubik);
+  --font-family--heading: var(--font-family--rubik);
+  --font-family--ui: var(--font-family--rubik);
 
   --line-height--base: 1.5;
   --line-height--tight: 1.2;

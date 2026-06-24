@@ -70,40 +70,40 @@ small {
 }
 
 .heading-data {
-  font-family: var(--font-family--heading-data);
+  font-family: var(--font-family--heading);
   font-size: var(--font-size--heading-data);
   font-weight: var(--font-weight--bold);
 }
 
 .heading-overline {
-  font-family: var(--font-family--heading-overline);
+  font-family: var(--font-family--heading);
   font-size: var(--font-size--heading-overline);
   font-weight: var(--font-weight--bold);
 }
 
 .heading-section {
-  font-family: var(--font-family--heading-base);
+  font-family: var(--font-family--heading);
   font-size: var(--font-size--heading-section);
   font-weight: var(--font-weight--normal);
   line-height: var(--line-height--tight);
 }
 
 .heading-subsection {
-  font-family: var(--font-family--heading-base);
+  font-family: var(--font-family--heading);
   font-size: var(--font-size--heading-subsection);
   font-weight: var(--font-weight--normal);
   line-height: var(--line-height--tight);
 }
 
 .heading-title-big {
-  font-family: var(--font-family--heading-base);
+  font-family: var(--font-family--heading);
   font-size: var(--font-size--heading-title-big);
   font-weight: var(--font-weight--normal);
   line-height: var(--line-height--tight);
 }
 
 .heading-title-small {
-  font-family: var(--font-family--heading-base);
+  font-family: var(--font-family--heading);
   font-size: var(--font-size--heading-title-small);
   font-weight: var(--font-weight--normal);
   line-height: var(--line-height--tight);

@@ -60,7 +60,7 @@
 }
 
 .link-list--feature .link-list__title {
-  font-family: var(--font-family--heading-base);
+  font-family: var(--font-family--heading);
   font-size: var(--font-size--heading-subsection);
   font-weight: var(--font-weight--normal);
   grid-area: title;
