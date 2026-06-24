@@ -1,6 +1,7 @@
 .image {
   background-color: var(--color--primary-inverse);
   border-radius: var(--border-radius--base);
+  display: block;
   height: 100%;
 
   img {

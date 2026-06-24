@@ -1,10 +1,18 @@
+html {
+  scroll-padding-block-start: 6rem;
+}
+
 body {
   --color--theme-background: var(--color--background-base);
 
-  container: global-nav global-footer / inline-size;
+  background-color: var(--color--background-base);
+  container: global-nav global-footer info-block / inline-size;
 }
 
 main {
+  display: grid;
+  gap: var(--space--xxx-large);
+  margin-block-end: var(--space--xxx-large);
   padding-inline: var(--space--page);
 }
 
