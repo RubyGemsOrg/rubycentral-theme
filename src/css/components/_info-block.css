@@ -32,8 +32,8 @@
 .info-block__content {
   display: flex;
   flex-direction: column;
-  height: 100%;
   gap: var(--space--small);
+  height: 100%;
 
   h2,
   h3,
