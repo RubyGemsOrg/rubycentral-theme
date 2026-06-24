@@ -3,23 +3,24 @@
   color-scheme: light dark;
 
   /* Primitive colors */
-  --color--black-base: #000000;
-  --color--blue-base: #6288bc;
+  --color--beige-base: #fffcfa;
+  --color--black-base: #292e37;
+  --color--blue-base: #4581d6;
   --color--blue-light: #edf5ff;
   --color--gray-base: #eff4f8;
-  --color--green-base: #71c09e;
+  --color--green-base: #59c899;
   --color--green-light: #f2fff9;
-  --color--navy-base: #444d5c;
+  --color--navy-base: #36435e;
   --color--navy-dark: #282e38;
-  --color--orange-base: #f3895f;
+  --color--orange-base: #f87d25;
   --color--orange-light: #fff5f1;
   --color--purple-base: #755384;
   --color--purple-light: #fcf4ff;
   --color--red-base: #ff3b32;
   --color--red-dark: #cf2821;
   --color--white-base: #ffffff;
-  --color--yellow-base: #ebaf24;
-  --color--yellow-light: #fff8e9;
+  --color--yellow-base: #fec233;
+  --color--yellow-light: #fff8ec;
 
   /* Semantic colors */
   --color--primary-base: var(--color--red-base);
@@ -27,7 +28,7 @@
   --color--primary-inverse: var(--color--navy-base);
   --color--primary-inverse-dark: var(--color--navy-dark);
 
-  --color--text-base: var(--color--navy-base);
+  --color--text-base: var(--color--black-base);
   --color--text-inverse: var(--color--white-base);
   --color--text-dark: var(--color--black-base);
 
@@ -42,15 +43,14 @@
   --color--accent-yellow: var(--color--yellow-base);
   --color--accent-yellow-background: var(--color--yellow-light);
 
-  --color--background-base: var(--color--white-base);
+  --color--background-base: var(--color--beige-base);
   --color--background-secondary: var(--color--gray-base);
   --color--background-dark: var(--color--navy-dark);
 
-  --color--button-primary: var(--color--primary-inverse-dark);
-  --color--button-primary-hover: var(--color--primary-base);
+  --color--button-primary: var(--color--accent-yellow);
+  --color--button-primary-hover: var(--color--primary-inverse);
 
-  --color--button-secondary: var(--color--background-base);
-  --color--button-secondary-hover: var(--color--primary-inverse-dark);
+  --color--button-secondary: var(--color--primary-inverse);
 
   --color--focus: var(--color--primary-dark);
   --color--link: var(--color--text-base);
@@ -94,8 +94,8 @@
   /* Borders */
   --border-radius--small: 0.25rem;
   --border-radius--base: 0.5rem;
-  --border-radius--large: 2rem;
-  --border-radius--x-large: 6.25rem;
+  --border-radius--medium: 1rem;
+  --border-radius--large: 6.25rem;
   --border-radius--circle: 100%;
 
   --border-width--base: 1px;
