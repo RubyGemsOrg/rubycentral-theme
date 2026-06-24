@@ -1,10 +1,12 @@
-<aside class="cta u-container" aria-label="{{label}}">
-  <div class="cta__inner">
-    {{#get 'pages' filter=copy limit='1'}}
-      {{#foreach pages}}
-        {{content}}
-      {{/foreach}}
-    {{/get}}
-    {{> "components/cta-buttons" primary=primary secondary=secondary}}
-  </div>
-</aside>
+<section class="u-container">
+  <aside class="cta" aria-label="{{label}}">
+    <div class="cta__inner">
+      {{#get 'pages' filter=copy limit='1'}}
+        {{#foreach pages}}
+          {{content}}
+        {{/foreach}}
+      {{/get}}
+      {{> "components/cta-buttons" primary=primary secondary=secondary}}
+    </div>
+  </aside>
+</section>

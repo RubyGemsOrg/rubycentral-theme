@@ -1,11 +1,19 @@
+html {
+  scroll-padding-block-start: 6rem;
+}
+
 body {
   --color--theme-background: var(--color--background-base);
 
-  container: global-nav global-footer / inline-size;
+  background-color: var(--color--background-base);
+  container: global-nav global-footer info-block / inline-size;
 }
 
 main {
-  padding-inline: var(--space--page);
+  --gutter: var(--space--page);
+
+  padding-inline: var(--gutter);
+  margin-block-end: var(--gutter);
 }
 
 body.page-about {

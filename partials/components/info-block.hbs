@@ -1,4 +1,4 @@
-<section{{#if id}} id="{{id}}"{{/if}} class="info-block{{#if border}} info-block--border{{/if}}{{#if container}} u-container{{/if}}">
+<section{{#if id}} id="{{id}}"{{/if}} class="info-block{{#if border}} info-block--border{{/if}}{{#if container}} u-container{{/if}}{{#if inverse}} info-block--inverse{{/if}}">
   {{#get 'pages' filter=copy limit='1' include='feature_image'}}
     {{#foreach pages}}
       <div class="info-block__content">
@@ -9,7 +9,7 @@
       </div>
       {{#if feature_image}}
         <div class="info-block__image">
-          {{> "components/image" src=feature_image alt=custom_excerpt}}
+          {{> "components/image" src=feature_image alt=custom_excerpt class=../../imageClass}}
         </div>
       {{/if}}
     {{/foreach}}
