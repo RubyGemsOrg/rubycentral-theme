@@ -93,7 +93,7 @@
 
   /* Borders */
   --border-radius--small: 0.25rem;
-  --border-radius--base: 1rem;
+  --border-radius--base: 0.5rem;
   --border-radius--large: 2rem;
   --border-radius--x-large: 6.25rem;
   --border-radius--circle: 100%;

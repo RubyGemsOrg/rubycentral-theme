@@ -4,51 +4,15 @@
 
 <section class="home-gallery u-container" aria-label="Community photos">
   <figure class="home-gallery__items u-grid">
-    <div class="home-gallery__slot">
-      {{#get 'pages' filter='tag:hash-home-gallery-slot-1' limit='all' include='feature_image' order='published_at asc'}}
-        {{#foreach pages}}
-          {{#if feature_image}}
+    {{#get 'pages' filter='tag:hash-home-gallery-image' limit='7' include='feature_image' order='id asc'}}
+      {{#foreach pages}}
+        {{#if feature_image}}
+          <div class="home-gallery__item" data-gallery-item>
             {{> "components/image" src=feature_image alt=custom_excerpt}}
-          {{/if}}
-        {{/foreach}}
-      {{/get}}
-    </div>
-    <div class="home-gallery__slot">
-      {{#get 'pages' filter='tag:hash-home-gallery-slot-2' limit='all' include='feature_image' order='published_at asc'}}
-        {{#foreach pages}}
-          {{#if feature_image}}
-            {{> "components/image" src=feature_image alt=custom_excerpt}}
-          {{/if}}
-        {{/foreach}}
-      {{/get}}
-    </div>
-    <div class="home-gallery__slot">
-      {{#get 'pages' filter='tag:hash-home-gallery-slot-3' limit='all' include='feature_image' order='published_at asc'}}
-        {{#foreach pages}}
-          {{#if feature_image}}
-            {{> "components/image" src=feature_image alt=custom_excerpt}}
-          {{/if}}
-        {{/foreach}}
-      {{/get}}
-    </div>
-    <div class="home-gallery__slot">
-      {{#get 'pages' filter='tag:hash-home-gallery-slot-4' limit='all' include='feature_image' order='published_at asc'}}
-        {{#foreach pages}}
-          {{#if feature_image}}
-            {{> "components/image" src=feature_image alt=custom_excerpt}}
-          {{/if}}
-        {{/foreach}}
-      {{/get}}
-    </div>
-    <div class="home-gallery__slot">
-      {{#get 'pages' filter='tag:hash-home-gallery-slot-5' limit='all' include='feature_image' order='published_at asc'}}
-        {{#foreach pages}}
-          {{#if feature_image}}
-            {{> "components/image" src=feature_image alt=custom_excerpt}}
-          {{/if}}
-        {{/foreach}}
-      {{/get}}
-    </div>
+          </div>
+        {{/if}}
+      {{/foreach}}
+    {{/get}}
   </figure>
 </section>
 
