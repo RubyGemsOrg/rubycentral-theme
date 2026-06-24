@@ -1,0 +1,17 @@
+.team-member {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space--xx-small);
+
+  .image {
+    aspect-ratio: 1;
+  }
+
+  p {
+    margin: 0;
+  }
+}
+
+.team-member__name {
+  font-weight: var(--font-weight--bold);
+}
