@@ -10,10 +10,10 @@ body {
 }
 
 main {
-  --gutter: var(--space--page);
-
-  padding-inline: var(--gutter);
-  margin-block-end: var(--gutter);
+  display: grid;
+  gap: var(--space--xxx-large);
+  padding-inline: var(--space--page);
+  margin-block-end: var(--space--xxx-large);
 }
 
 body.page-about {

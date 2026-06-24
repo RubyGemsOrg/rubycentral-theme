@@ -1,5 +1,7 @@
 .u-container {
+  box-sizing: border-box;
   margin-inline: auto;
   max-width: var(--container--base);
   padding-inline: var(--space--medium);
+  width: 100%;
 }

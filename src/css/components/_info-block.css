@@ -15,6 +15,7 @@
   .info-block:has(.info-block__image) > .info-block__content,
   .info-block:has(.info-block__image) > .info-block__image {
     grid-column: span 3;
+    min-width: 0;
   }
 }
 
