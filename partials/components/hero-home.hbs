@@ -2,20 +2,20 @@
   <div class="hero__inner u-container">
     <div class="hero__content">
       <div class="hero__split u-grid">
-        <div class="hero__text u-grid-span-4">
+        <div class="hero__text u-grid-span-3">
           {{#get 'pages' filter=copy limit='1'}}
             {{#foreach pages}}
               {{content}}
             {{/foreach}}
           {{/get}}
+          {{> "components/cta-buttons" primary=primary secondary=secondary}}
         </div>
-        <figure class="hero__images u-grid-span-3">
+        <figure class="hero__images u-grid-span-4">
           {{> "components/image" src="http://localhost:2368/content/images/2026/06/steering-committees-discussion.jpg" alt="A small group of people in conversation around a table"}}
           {{> "components/image" src="http://localhost:2368/content/images/2026/06/ruby-alliance-connection.jpg" alt="Two community members embracing warmly at a conference"}}
           {{> "components/image" src="http://localhost:2368/content/images/2026/06/speaking-opportunity-portrait.jpg" alt="A speaker presenting on stage at a Ruby conference"}}
         </figure>
       </div>
-      {{> "components/cta-buttons" primary=primary secondary=secondary}}
     </div>
     <div class="home-stats__row">
       <div class="home-stats__marquee">

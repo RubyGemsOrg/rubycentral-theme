@@ -16,25 +16,22 @@
 
   h1 {
     font-family: var(--font-family--heading);
-    font-size: var(--font-size--heading-overline);
+    font-size: var(--font-size--heading-title-big);
     font-weight: var(--font-weight--bold);
+    line-height: var(--line-height--tight);
   }
 
   h2 {
     font-family: var(--font-family--heading);
-    font-size: var(--font-size--heading-title-small);
+    font-size: var(--font-size--heading-overline);
     font-weight: var(--font-weight--normal);
-    line-height: var(--line-height--tight);
   }
 }
 
 .hero--home .hero__text {
+  align-content: start;
   display: grid;
   gap: var(--space--medium);
-}
-
-.hero--home h2 {
-  font-size: var(--font-size--heading-title-big);
 }
 
 .hero--home .hero__images {
@@ -43,9 +40,15 @@
   margin: 0;
 
   @media (min-width: 55em) {
-    aspect-ratio: 3 / 2;
+    aspect-ratio: 16 / 9;
     grid-template-columns: repeat(7, 1fr);
     grid-template-rows: repeat(7, 1fr);
+  }
+}
+
+.hero__links {
+  @media (min-width: 55em) {
+    grid-column: 6 / 8;
   }
 }
 
