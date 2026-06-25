@@ -9,7 +9,7 @@
 
 {{> "components/info-block" copy="title:'Events::NearbyEvents'" primary="title:'Events::NearbyEvents - Button'" secondary="title:'Events::NearbyEvents - Secondary Button'" id="nearby-events" container=true inverse=true}}
 
-{{#> "components/section" id="past-events" copy="title:'Events::PastEvents - Heading'" grid="trio"}}
+{{#> "components/section" id="past-events" copy="title:'Events::PastEvents - Heading'" grid="trio" footerPrimary="title:'Events::PastEvents - Button'"}}
   {{#get "pages" filter="tag:hash-rubyconf-videos" limit="all" order="published_at asc"}}
     {{#foreach pages}}
       {{> "components/video-tease" title=title image=feature_image alt=feature_image_alt href=custom_excerpt}}

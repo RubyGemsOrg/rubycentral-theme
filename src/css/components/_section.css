@@ -28,6 +28,14 @@
   }
 }
 
+.section__body {
+  max-width: 65ch;
+
+  p {
+    margin: 0;
+  }
+}
+
 .section--feature h2 {
   align-items: center;
   display: flex;

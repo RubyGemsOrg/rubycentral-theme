@@ -1,0 +1,29 @@
+.sponsor-logo {
+  align-items: center;
+  border: var(--border--light);
+  border-radius: var(--border-radius--base);
+  display: flex;
+  justify-content: center;
+  padding: var(--space--base);
+
+  .image {
+    border-radius: 0;
+
+    img {
+      object-fit: contain;
+    }
+  }
+}
+
+a.sponsor-logo {
+  transition-property: border-color;
+
+  &:hover {
+    border-color: var(--color--text-base);
+  }
+}
+
+.sponsor-logo__name {
+  font-family: var(--font-family--heading);
+  font-weight: var(--font-weight--bold);
+}
