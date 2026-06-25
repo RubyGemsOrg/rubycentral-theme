@@ -10,6 +10,7 @@ body {
 }
 
 main {
+  grid-template-columns: minmax(0, 1fr);
   display: grid;
   gap: var(--space--xxx-large);
   margin-block-end: var(--space--xx-large);
