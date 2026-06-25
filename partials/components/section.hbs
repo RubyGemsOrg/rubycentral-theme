@@ -20,4 +20,9 @@
   <div class="section__content{{#if grid}} u-grid u-grid--{{grid}}{{/if}}">
     {{> @partial-block}}
   </div>
+  {{#if footerPrimary}}
+    <div class="section__footer">
+      {{> "components/cta-buttons" primary=footerPrimary secondary=footerSecondary}}
+    </div>
+  {{/if}}
 </section>
