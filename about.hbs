@@ -6,7 +6,7 @@
 
 {{> "components/info-block" copy="title:'About::Mission'" primary="title:'About::Mission - Button'" id="mission" container=true inverse=true}}
 
-{{#> "components/section" id="board-of-directors" copy="title:'About::BoardOfDirectors - Heading'" grid=true}}
+{{#> "components/section" id="board-of-directors" copy="title:'About::BoardOfDirectors - Heading'" grid="quad"}}
   {{#get "pages" filter="tag:hash-board-of-directors" limit="all" order="published_at asc"}}
     {{#foreach pages}}
       {{> "components/team-member" name=title jobTitle=custom_excerpt image=feature_image}}
@@ -14,7 +14,7 @@
   {{/get}}
 {{/components/section}}
 
-{{#> "components/section" id="staff" copy="title:'About::Staff - Heading'" grid=true}}
+{{#> "components/section" id="staff" copy="title:'About::Staff - Heading'" grid="quad"}}
   {{#get "pages" filter="tag:hash-staff" limit="all" order="published_at asc"}}
     {{#foreach pages}}
       {{> "components/team-member" name=title jobTitle=custom_excerpt image=feature_image}}

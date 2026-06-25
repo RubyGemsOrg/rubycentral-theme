@@ -1,6 +1,5 @@
 .global-nav {
   background-color: var(--color--theme-background);
-  border-bottom: var(--border--light);
   padding-block: var(--space--base);
   position: sticky;
   top: 0;

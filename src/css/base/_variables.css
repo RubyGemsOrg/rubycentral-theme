@@ -3,33 +3,35 @@
   color-scheme: light dark;
 
   /* Primitive colors */
-  --color--black-base: #000000;
-  --color--blue-base: #6288bc;
+  --color--beige-base: #fffcfa;
+  --color--black-base: #292e37;
+  --color--blue-base: #4581d6;
   --color--blue-light: #edf5ff;
   --color--gray-base: #eff4f8;
-  --color--green-base: #71c09e;
+  --color--green-base: #59c899;
   --color--green-light: #f2fff9;
-  --color--navy-base: #444d5c;
+  --color--navy-base: #36435e;
   --color--navy-dark: #282e38;
-  --color--orange-base: #f3895f;
+  --color--orange-base: #f87d25;
   --color--orange-light: #fff5f1;
   --color--purple-base: #755384;
   --color--purple-light: #fcf4ff;
-  --color--red-base: #f83d34;
+  --color--red-base: #ff3b32;
   --color--red-dark: #cf2821;
   --color--white-base: #ffffff;
-  --color--yellow-base: #ebaf24;
-  --color--yellow-light: #fff8e9;
+  --color--yellow-base: #fec233;
+  --color--yellow-light: #fff8ec;
 
   /* Semantic colors */
   --color--primary-base: var(--color--red-base);
   --color--primary-dark: var(--color--red-dark);
+  --color--secondary-base: var(--color--yellow-base);
   --color--primary-inverse: var(--color--navy-base);
   --color--primary-inverse-dark: var(--color--navy-dark);
 
-  --color--text-base: var(--color--navy-base);
+  --color--text-base: var(--color--black-base);
   --color--text-inverse: var(--color--white-base);
-  --color--text-dark: var(--color--black);
+  --color--text-dark: var(--color--black-base);
 
   --color--accent-blue: var(--color--blue-base);
   --color--accent-blue-background: var(--color--blue-light);
@@ -42,15 +44,14 @@
   --color--accent-yellow: var(--color--yellow-base);
   --color--accent-yellow-background: var(--color--yellow-light);
 
-  --color--background-base: var(--color--white-base);
+  --color--background-base: var(--color--beige-base);
   --color--background-secondary: var(--color--gray-base);
   --color--background-dark: var(--color--navy-dark);
 
-  --color--button-primary: var(--color--primary-inverse-dark);
-  --color--button-primary-hover: var(--color--primary-base);
+  --color--button-primary: var(--color--accent-yellow);
+  --color--button-primary-hover: var(--color--primary-inverse);
 
-  --color--button-secondary: var(--color--background-base);
-  --color--button-secondary-hover: var(--color--primary-inverse-dark);
+  --color--button-secondary: var(--color--primary-inverse);
 
   --color--focus: var(--color--primary-dark);
   --color--link: var(--color--text-base);
@@ -63,7 +64,7 @@
   --font-size--300: 1.5rem;
   --font-size--400: clamp(1.75rem, 1.375rem + 1vw, 2rem);
   --font-size--500: clamp(2rem, 1.25rem + 2vw, 2.5rem);
-  --font-size--600: clamp(2.25rem, 1.5rem + 2vw, 2.75rem);
+  --font-size--600: clamp(2.5rem, 1.75rem + 2vw, 3.25rem);
 
   --font-size--body-callout: var(--font-size--400);
   --font-size--body-base: var(--font-size--100);
@@ -93,15 +94,15 @@
 
   /* Borders */
   --border-radius--small: 0.25rem;
-  --border-radius--base: 1rem;
-  --border-radius--large: 2rem;
-  --border-radius--x-large: 6.25rem;
+  --border-radius--base: 0.5rem;
+  --border-radius--medium: 1rem;
+  --border-radius--large: 6.25rem;
   --border-radius--circle: 100%;
 
   --border-width--base: 1px;
   --border-width--thick: 2px;
 
-  --border--base: var(--border-width--base) solid var(--color--primary-base);
+  --border--base: var(--border-width--base) solid var(--color--secondary-base);
   --border--light: var(--border-width--base) solid var(--color--gray-base);
   --border--dark: var(--border-width--base) solid var(--color--primary-inverse);
 

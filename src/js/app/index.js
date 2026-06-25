@@ -1,4 +1,5 @@
 import './global-nav';
+import './home-involvement';
 
 document.querySelectorAll('.section-header').forEach((header) => {
     header.addEventListener('click', function () {

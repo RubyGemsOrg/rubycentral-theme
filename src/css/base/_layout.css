@@ -10,10 +10,15 @@ body {
 }
 
 main {
+  grid-template-columns: minmax(0, 1fr);
   display: grid;
   gap: var(--space--xxx-large);
-  margin-block-end: var(--space--xxx-large);
+  margin-block-end: var(--space--xx-large);
   padding-inline: var(--space--page);
+}
+
+body:has(.hero--home) {
+  background-color: var(--color--background-secondary);
 }
 
 body.page-about {

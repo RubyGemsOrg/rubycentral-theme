@@ -1,7 +1,7 @@
 .button,
 .cta-buttons__button a {
   align-items: center;
-  border: var(--border-width--thick) solid transparent;
+  border: var(--border-width--base) solid transparent;
   cursor: pointer;
   display: flex;
   font-family: var(--font-family--ui);
@@ -28,30 +28,28 @@
 .cta-buttons__primary a {
   --bg-color: var(--color--button-primary);
 
-  background-color: var(--bg-color);
-  border-radius: var(--border-radius--base) var(--border-radius--small) var(--border-radius--base) var(--border-radius--small);
-  color: contrast-color(var(--bg-color));
+  background-color: var(--color--button-primary);
+  border-radius: var(--border-radius--medium) var(--border-radius--small) var(--border-radius--medium) var(--border-radius--small);
 
   &:hover,
   &:focus-visible {
-    --bg-color: var(--color--button-primary-hover);
-    color: contrast-color(var(--bg-color));
+    background-color: var(--color--button-primary-hover);
+    color: var(--color--text-inverse);
   }
 }
 
 .button--secondary,
 .cta-buttons__secondary a {
-  --bg-color: var(--color--button-secondary);
 
-  background-color: var(--bg-color);
-  border-color: var(--color--button-secondary-hover);
-  border-radius: var(--border-radius--small) var(--border-radius--base) var(--border-radius--small) var(--border-radius--base);
-  color: contrast-color(var(--bg-color));
+  background-color: var(--color--background-base);
+  border-color: var(--color--button-secondary);
+  border-radius: var(--border-radius--small) var(--border-radius--medium) var(--border-radius--small) var(--border-radius--medium);
+  color: var(--color--text-base);
+  transition-property: border-color;
 
   &:hover,
   &:focus-visible {
-    --bg-color: var(--color--button-secondary-hover);
-    color: contrast-color(var(--bg-color));
+    border-color: var(--color--button-primary);
   }
 }
 
@@ -71,17 +69,9 @@
 }
 
 .button--icon {
-  background-color: var(--color--button-secondary);
   border-radius: var(--border-radius--small);
-  color: var(--color--text-base);
   padding-block: var(--space--small);
   padding-inline: var(--space--small);
-
-  &:hover,
-  &:focus-visible {
-    --bg-color: var(--color--button-primary-hover);
-    color: var(--color--button-primary-hover);
-  }
 }
 
 .button:disabled {

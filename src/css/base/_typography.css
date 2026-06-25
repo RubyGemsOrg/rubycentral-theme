@@ -69,6 +69,11 @@ small {
   font-size: var(--font-size--body-small);
 }
 
+::selection {
+  background-color: var(--color--accent-yellow);
+  color: var(--color--text-base);
+}
+
 .heading-data {
   font-family: var(--font-family--heading);
   font-size: var(--font-size--heading-data);

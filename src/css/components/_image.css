@@ -1,11 +1,11 @@
 .image {
+  aspect-ratio: 16 / 9;
   border-radius: var(--border-radius--base);
   display: block;
   height: 100%;
   overflow: hidden;
 
   img {
-    filter: grayscale(1);
     height: 100%;
     object-fit: cover;
   }

@@ -1,4 +1,4 @@
-{{!-- params: id (optional, anchor target — matches the hero link-list href), copy (optional, section-level overline+heading filter; omit when the wrapped content already provides its own heading, e.g. a standalone info-block), grid (boolean: lay child components out in a flowing grid, each spanning 2 of 7 columns) --}}
+{{!-- params: id (optional, anchor target — matches the hero link-list href), copy (optional, section-level overline+heading filter; omit when the wrapped content already provides its own heading, e.g. a standalone info-block), grid (string: "trio" or "quad" — lay child components out in a flowing grid using the matching u-grid modifier) --}}
 <section{{#if id}} id="{{id}}"{{/if}} class="section u-container">
   {{#if copy}}
     {{#get 'pages' filter=copy limit='1'}}
@@ -9,7 +9,7 @@
       {{/foreach}}
     {{/get}}
   {{/if}}
-  <div class="section__content{{#if grid}} section__content--grid u-grid{{/if}}">
+  <div class="section__content{{#if grid}} u-grid u-grid--{{grid}}{{/if}}">
     {{> @partial-block}}
   </div>
 </section>

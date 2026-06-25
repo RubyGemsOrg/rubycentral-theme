@@ -35,10 +35,10 @@
   transition-property: border-color;
 
   &:hover {
-    border-color: var(--color--primary-base);
+    border-color: var(--color--secondary-base);
 
     .link-list__arrow {
-      background-color: var(--color--primary-base);
+      background-color: var(--color--secondary-base);
       color: var(--color--text-inverse);
       transform: translateX(var(--space--xx-small));
     }
@@ -93,7 +93,6 @@
 .link-list--feature .link-list__arrow {
   --size: var(--space--large);
 
-  border: var(--border--base);
   grid-area: arrow;
 
   svg {

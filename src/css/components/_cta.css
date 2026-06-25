@@ -1,6 +1,6 @@
 .cta {
   background-color: var(--color--background-secondary);
-  border-radius: var(--border-radius--base) var(--border-radius--x-large) var(--border-radius--base) var(--border-radius--x-large);
+  border-radius: var(--border-radius--medium) var(--border-radius--large) var(--border-radius--medium) var(--border-radius--large);
   display: flex;
   justify-content: center;
   padding: var(--space--xx-large);
@@ -12,6 +12,10 @@
     line-height: var(--line-height--tight);
     margin: 0;
   }
+}
+
+body:has(.hero--home) .cta {
+  background-color: var(--color--background-base);
 }
 
 .cta__inner {

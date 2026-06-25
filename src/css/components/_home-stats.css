@@ -1,0 +1,98 @@
+.home-stats__row {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space--medium);
+  margin-block-start: var(--space--x-large);
+
+  @media (min-width: 65em) {
+    align-items: center;
+    flex-direction: row;
+    gap: var(--space--large);
+  }
+}
+
+.home-stats__heading {
+  flex-shrink: 0;
+
+  @media (min-width: 65em) {
+    max-width: 12rem;
+  }
+}
+
+.home-stats__heading h2 {
+  font-family: var(--font-family--body);
+  font-size: var(--font-size--body-small);
+  font-weight: var(--font-weight--bold);
+  margin: 0;
+}
+
+.home-stats__marquee {
+  -webkit-mask-image: linear-gradient(to right, transparent, black var(--space--x-large), black calc(100% - var(--space--x-large)), transparent);
+  mask-image: linear-gradient(to right, transparent, black var(--space--x-large), black calc(100% - var(--space--x-large)), transparent);
+  min-width: 0;
+  overflow: hidden;
+
+  @media (min-width: 65em) {
+    flex: 1 1 0;
+  }
+}
+
+.home-stats__track {
+  display: flex;
+}
+
+.home-stats__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space--x-large);
+  padding-inline: var(--space--medium);
+}
+
+.home-stats__list[aria-hidden="true"] {
+  display: none;
+}
+
+.home-stats__item {
+  align-items: baseline;
+  display: flex;
+  flex-direction: row;
+  gap: var(--space--x-small);
+}
+
+.home-stats__value {
+  font-family: var(--font-family--heading);
+  font-size: var(--font-size--heading-data);
+  font-weight: var(--font-weight--bold);
+  margin: 0;
+}
+
+.home-stats__description {
+  font-size: var(--font-size--body-small);
+  margin: 0;
+}
+
+@keyframes home-stats-marquee {
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .home-stats__list {
+    flex-shrink: 0;
+    flex-wrap: nowrap;
+  }
+
+  .home-stats__list[aria-hidden="true"] {
+    display: flex;
+  }
+
+  .home-stats__track {
+    animation: home-stats-marquee 60s linear infinite;
+    width: max-content;
+  }
+
+  .home-stats__marquee:hover .home-stats__track {
+    animation-play-state: paused;
+  }
+}
