@@ -76,6 +76,10 @@
   }
 }
 
+.info-block__content:not(:has(> h2)) h3 {
+  font-weight: var(--font-weight--bold);
+}
+
 .info-block__content:has(> h4) {
   h3 {
     font-family: var(--font-family--heading);

@@ -1,0 +1,20 @@
+{{!-- params: copy (filter for the featured page), label (small overline string), secondary (cta filter) --}}
+{{#get 'pages' filter=copy limit='1' include='feature_image'}}
+  {{#foreach pages}}
+    <div class="info-block-feature">
+      {{#if feature_image}}
+        <div class="info-block-feature__image">
+          {{> "components/image" src=feature_image alt=title}}
+        </div>
+      {{/if}}
+      <div class="info-block-feature__content">
+        <p class="info-block-feature__label">{{../../label}}</p>
+        <p class="info-block-feature__title">{{title}}</p>
+        <p class="info-block-feature__meta">{{custom_excerpt}}</p>
+        {{#if ../../secondary}}
+          {{> "components/cta-buttons" secondary=../../secondary}}
+        {{/if}}
+      </div>
+    </div>
+  {{/foreach}}
+{{/get}}

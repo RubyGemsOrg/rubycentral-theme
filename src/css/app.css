@@ -29,6 +29,7 @@
 @import "components/_home-stats.css" layer(components);
 @import "components/_image.css" layer(components);
 @import "components/_info-block.css" layer(components);
+@import "components/_info-block-feature.css" layer(components);
 @import "components/_link-list.css" layer(components);
 @import "components/_section.css" layer(components);
 @import "components/_team-member.css" layer(components);
