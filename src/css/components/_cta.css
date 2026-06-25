@@ -1,6 +1,6 @@
 .cta {
   background-color: var(--color--background-secondary);
-  border-radius: var(--border-radius--base) var(--border-radius--x-large) var(--border-radius--base) var(--border-radius--x-large);
+  border-radius: var(--border-radius--medium) var(--border-radius--large) var(--border-radius--medium) var(--border-radius--large);
   display: flex;
   justify-content: center;
   padding: var(--space--xx-large);

@@ -25,6 +25,7 @@
   /* Semantic colors */
   --color--primary-base: var(--color--red-base);
   --color--primary-dark: var(--color--red-dark);
+  --color--secondary-base: var(--color--yellow-base);
   --color--primary-inverse: var(--color--navy-base);
   --color--primary-inverse-dark: var(--color--navy-dark);
 
@@ -101,7 +102,7 @@
   --border-width--base: 1px;
   --border-width--thick: 2px;
 
-  --border--base: var(--border-width--base) solid var(--color--primary-base);
+  --border--base: var(--border-width--base) solid var(--color--secondary-base);
   --border--light: var(--border-width--base) solid var(--color--gray-base);
   --border--dark: var(--border-width--base) solid var(--color--primary-inverse);
 
