@@ -11,76 +11,10 @@
   </div>
 {{/components/section}}
 
-<section class="home-pillars u-container" aria-labelledby="home-pillars-heading">
-  <h2 id="home-pillars-heading" class="home-pillars__label">
-    {{> "icons/gem-badge"}}
-    Pillars
-  </h2>
-
-  <div class="home-pillars__columns">
-
-    {{! Events }}
-    <article class="home-pillars__column home-pillars__column--events" aria-labelledby="pillar-events-heading">
-      <h3 id="pillar-events-heading" class="home-pillars__column-title">Events</h3>
-      <p class="home-pillars__column-subtitle">Where the Ruby community comes <em>together</em>.</p>
-
-      {{#get 'pages' filter='tag:hash-home-featured-event' limit='1' include='feature_image'}}
-        {{#foreach pages}}
-          <article class="home-event-card">
-            <p class="home-event-card__label">Next up</p>
-            <h4 class="home-event-card__title">{{title}}</h4>
-            {{#if custom_excerpt}}
-              <p class="home-event-card__meta">{{custom_excerpt}}</p>
-            {{/if}}
-            {{#if feature_image}}
-              <img class="home-event-card__image" src="{{feature_image}}" alt="" />
-            {{/if}}
-            {{#get 'pages' filter='tag:hash-home-event-cta' limit='1'}}
-              {{#foreach pages}}
-                {{content}}
-              {{/foreach}}
-            {{/get}}
-          </article>
-          {{#if html}}
-            <div class="home-event-card__description">{{content}}</div>
-          {{/if}}
-        {{/foreach}}
-      {{/get}}
-    </article>
-
-    {{! Open source }}
-    <article class="home-pillars__column home-pillars__column--open-source" aria-labelledby="pillar-open-source-heading">
-      <h3 id="pillar-open-source-heading" class="home-pillars__column-title">Open source</h3>
-      <p class="home-pillars__column-subtitle">The infrastructure Ruby runs on.</p>
-      {{#get 'pages' filter="title:'Home::OpenSource'" limit='1'}}
-        {{#foreach pages}}
-          <div class="home-pillars__column-description">{{content}}</div>
-        {{/foreach}}
-      {{/get}}
-      {{#get 'pages' filter="title:'Home::OpenSource - Button'" limit='1'}}
-        {{#foreach pages}}
-          {{content}}
-        {{/foreach}}
-      {{/get}}
-    </article>
-
-    {{! Community }}
-    <article class="home-pillars__column home-pillars__column--community" aria-labelledby="pillar-community-heading">
-      <h3 id="pillar-community-heading" class="home-pillars__column-title">Community</h3>
-      <p class="home-pillars__column-subtitle">Built <em>by</em> Rubyists, <em>for</em> Rubyists.</p>
-      {{#get 'pages' filter="title:'Home::Community'" limit='1'}}
-        {{#foreach pages}}
-          <div class="home-pillars__column-description">{{content}}</div>
-        {{/foreach}}
-      {{/get}}
-      {{#get 'pages' filter="title:'Home::Community - Button'" limit='1'}}
-        {{#foreach pages}}
-          {{content}}
-        {{/foreach}}
-      {{/get}}
-    </article>
-
-  </div>
-</section>
+{{#> "components/section" id="pillars" copy="title:'Home::Pillars - Heading'" grid=true}}
+  {{> "components/info-block" copy="title:'Home::Pillars - Conferences'" id="" border=true}}
+  {{> "components/info-block" copy="title:'Home::Pillars - OpenSource'" secondary="title:'Home::Pillars - OpenSource - Button'" id="" border=true}}
+  {{> "components/info-block" copy="title:'Home::Pillars - Community'" secondary="title:'Home::Pillars - Community - Button'" id="" border=true}}
+{{/components/section}}
 
 {{> "components/cta" copy="title:'Home::Transparency'" primary="title:'Home::Transparency - Button'" label="Transparency and governance"}}

@@ -1,7 +1,7 @@
 .button,
 .cta-buttons__button a {
   align-items: center;
-  border: var(--border-width--thick) solid transparent;
+  border: var(--border-width--base) solid transparent;
   cursor: pointer;
   display: flex;
   font-family: var(--font-family--ui);

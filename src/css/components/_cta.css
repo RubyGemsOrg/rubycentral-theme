@@ -14,7 +14,7 @@
   }
 }
 
-.cta {
+body:has(.hero--home) .cta {
   background-color: var(--color--background-base);
 }
 

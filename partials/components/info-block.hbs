@@ -5,6 +5,8 @@
         {{content}}
         {{#if ../../primary}}
           {{> "components/cta-buttons" primary=../../primary secondary=../../secondary}}
+        {{else if ../../secondary}}
+          {{> "components/cta-buttons" primary=../../primary secondary=../../secondary}}
         {{/if}}
       </div>
       {{#if feature_image}}
