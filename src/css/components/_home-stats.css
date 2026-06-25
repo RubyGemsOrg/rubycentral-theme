@@ -53,10 +53,10 @@
 }
 
 .home-stats__item {
+  align-items: baseline;
   display: flex;
-  flex-direction: column;
-  flex-shrink: 0;
-  width: 12rem;
+  flex-direction: row;
+  gap: var(--space--x-small);
 }
 
 .home-stats__value {

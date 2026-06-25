@@ -25,7 +25,6 @@
 @import "components/_global-footer.css" layer(components);
 @import "components/_global-nav.css" layer(components);
 @import "components/_hero.css" layer(components);
-@import "components/_home-gallery.css" layer(components);
 @import "components/_home-stats.css" layer(components);
 @import "components/_image.css" layer(components);
 @import "components/_info-block.css" layer(components);

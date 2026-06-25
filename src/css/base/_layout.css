@@ -16,6 +16,10 @@ main {
   padding-inline: var(--space--page);
 }
 
+body:has(.hero--home) {
+  background-color: var(--color--background-secondary);
+}
+
 body.page-about {
   --color--theme-background: var(--color--accent-purple-background);
 }

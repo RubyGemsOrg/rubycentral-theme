@@ -1,5 +1,4 @@
 import './global-nav';
-import './home-gallery';
 
 document.querySelectorAll('.section-header').forEach((header) => {
     header.addEventListener('click', function () {

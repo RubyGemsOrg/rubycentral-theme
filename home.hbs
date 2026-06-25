@@ -2,21 +2,11 @@
 
 {{> "components/hero-home" copy="title:'Home::Hero - Body'" primary="title:'Home::Hero - Button Primary'" secondary="title:'Home::Hero - Button Secondary'"}}
 
-<section class="home-gallery u-container" aria-label="Community photos">
-  <figure class="home-gallery__items u-grid">
-    {{#get 'pages' filter='tag:hash-home-gallery-image' limit='7' include='feature_image' order='id asc'}}
-      {{#foreach pages}}
-        {{#if feature_image}}
-          <div class="home-gallery__item" data-gallery-item>
-            {{> "components/image" src=feature_image alt=custom_excerpt}}
-          </div>
-        {{/if}}
-      {{/foreach}}
-    {{/get}}
-  </figure>
+<section class="home-image u-container" aria-label="Community photo">
+  {{> "components/image" src="http://localhost:2368/content/images/2026/06/about-mission-audience.jpg" alt="A large audience watching a conference talk"}}
 </section>
 
-<section class="home-involvement u-container" aria-label="Ruby Central is your community">
+<section class="u-container" aria-label="Ruby Central is your community">
   {{#get 'pages' filter="title:'Home::Involvement - Heading'" limit='1'}}
     {{#foreach pages}}
       {{content}}
