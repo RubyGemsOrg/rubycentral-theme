@@ -37,7 +37,7 @@
     background-color: var(--color--secondary-base);
     content: "";
     display: block;
-    width: 100%;
     height: var(--border-width--base);
+    width: 100%;
   }
 }

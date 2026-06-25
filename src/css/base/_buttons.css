@@ -54,17 +54,14 @@
 }
 
 .button--inverted {
-  --bg-color: var(--color--button-secondary);
-
-  background-color: var(--bg-color);
-  border-color: var(--color--button-secondary-hover);
-  border-radius: var(--border-radius--small) var(--border-radius--base) var(--border-radius--small) var(--border-radius--base);
-  color: contrast-color(var(--bg-color));
+  background-color: var(--color--background-base);
+  border-color: var(--color--button-secondary);
+  border-radius: var(--border-radius--small) var(--border-radius--medium) var(--border-radius--small) var(--border-radius--medium);
+  color: var(--color--text-base);
 
   &:hover,
   &:focus-visible {
-    --bg-color: var(--color--button-primary-hover);
-    color: contrast-color(var(--bg-color));
+    background-color: var(--color--button-primary);
   }
 }
 
