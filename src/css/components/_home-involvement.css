@@ -1,0 +1,17 @@
+.home-involvement .link-list {
+  @media (min-width: 55em) {
+    grid-column: span 5;
+  }
+}
+
+.home-involvement__image {
+  margin: 0;
+
+  @media (min-width: 55em) {
+    grid-column: span 2;
+  }
+}
+
+.home-involvement__image {
+  align-self: start;
+}

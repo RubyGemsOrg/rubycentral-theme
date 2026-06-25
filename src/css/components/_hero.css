@@ -1,6 +1,7 @@
 .hero {
   background-color: var(--color--theme-background);
   margin-inline: calc(-1 * var(--space--medium));
+  min-width: 0;
   padding-block: var(--space--x-large);
 }
 

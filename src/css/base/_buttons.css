@@ -44,6 +44,7 @@
   background-color: transparent;
   border-color: var(--color--button-secondary);
   border-radius: var(--border-radius--small) var(--border-radius--medium) var(--border-radius--small) var(--border-radius--medium);
+  color: var(--color--text-base);
   transition-property: border-color;
 
   &:hover,

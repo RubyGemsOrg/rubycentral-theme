@@ -3,10 +3,10 @@
   <p class="link-list__label">{{label}}</p>
 {{/if}}
   <ul class="link-list__items">
-    {{#get 'pages' filter=links limit='8' order='published_at asc'}}
+    {{#get 'pages' filter=links limit='8' include='feature_image' order='published_at asc'}}
       {{#foreach pages}}
         <li class="link-list__item">
-          <a class="link-list__link" href="{{custom_excerpt}}">
+          <a class="link-list__link" href="{{custom_excerpt}}" {{#if feature_image}}data-image="{{feature_image}}"{{/if}}>
             <p class="link-list__title">{{title}}</p>
             {{#if ../../description}}
               <div class="link-list__description">{{content}}</div>

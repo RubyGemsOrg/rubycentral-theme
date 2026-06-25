@@ -14,6 +14,10 @@
   }
 }
 
+.cta {
+  background-color: var(--color--background-base);
+}
+
 .cta__inner {
   display: flex;
   flex-direction: column;
