@@ -1,0 +1,16 @@
+<div class="sponsor-group">
+  {{#if heading}}
+    <p class="sponsor-group__heading">{{heading}}</p>
+  {{/if}}
+  <div class="sponsor-group__logos u-grid u-grid--quad">
+    {{#get "pages" filter=filter limit="all" order="published_at asc"}}
+      {{#foreach pages}}
+        {{#if feature_image}}
+          {{> "components/sponsor-logo" name=title logo=feature_image alt=feature_image_alt href=custom_excerpt}}
+        {{else}}
+          {{> "components/sponsor-logo" anonymous=true name=title}}
+        {{/if}}
+      {{/foreach}}
+    {{/get}}
+  </div>
+</div>

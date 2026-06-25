@@ -7,6 +7,8 @@
 {{/components/section}}
 
 {{#> "components/section" id="sponsors" copy="title:'Sponsors::CurrentSponsors - Heading'"}}
+  {{> "components/sponsor-group" heading="Open Source Sponsors" filter="tag:hash-oss-sponsors"}}
+  {{> "components/sponsor-group" heading="RubyGems Supporters Plus" filter="tag:hash-rubygems-sponsors"}}
 {{/components/section}}
 
 {{> "components/cta" copy="title:'Sponsors::Callout - Become A Sponsor'" primary="title:'Sponsors::Callout - Become A Sponsor - Button'" secondary="title:'Sponsors::Callout - Become A Sponsor - Secondary Button'" label="Become a sponsor"}}
@@ -14,15 +16,15 @@
 {{> "components/info-block" copy="title:'Sponsors::RubyAlliance'" primary="title:'Sponsors::RubyAlliance - Button'" id="ruby-alliance" container=true inverse=true}}
 
 {{#> "components/section" id="impact" copy="title:'Sponsors::Impact - Heading'" grid="trio"}}
-  {{> "components/info-block" copy="title:'Sponsors::Impact - Infrastructure'" primary="title:'Sponsors::Impact - Infrastructure - Button'" id=""}}
-  {{> "components/info-block" copy="title:'Sponsors::Impact - Events'" primary="title:'Sponsors::Impact - Events - Button'" id=""}}
-  {{> "components/info-block" copy="title:'Sponsors::Impact - CommunityPrograms'" primary="title:'Sponsors::Impact - CommunityPrograms - Button'" id=""}}
-{{/components/section}}
-
-{{#> "components/section" id="become-a-sponsor" copy="title:'Sponsors::BecomeASponsor - Heading'" grid="trio"}}
-  {{> "components/info-block" copy="title:'Sponsors::BecomeASponsor - ChooseYourLevel'" primary="title:'Sponsors::BecomeASponsor - ChooseYourLevel - Button'" id=""}}
-  {{> "components/info-block" copy="title:'Sponsors::BecomeASponsor - GetInTouch'" primary="title:'Sponsors::BecomeASponsor - GetInTouch - Button'" id=""}}
-  {{> "components/info-block" copy="title:'Sponsors::BecomeASponsor - GetRecognized'" primary="title:'Sponsors::BecomeASponsor - GetRecognized - Button'" id=""}}
+  {{> "components/info-block" copy="title:'Sponsors::Impact - Infrastructure'" secondary="title:'Sponsors::Impact - Infrastructure - Button'" id="" border=true}}
+  {{> "components/info-block" copy="title:'Sponsors::Impact - Events'" secondary="title:'Sponsors::Impact - Events - Button'" id="" border=true}}
+  {{> "components/info-block" copy="title:'Sponsors::Impact - CommunityPrograms'" secondary="title:'Sponsors::Impact - CommunityPrograms - Button'" id="" border=true}}
 {{/components/section}}
 
 {{> "components/cta" copy="title:'Sponsors::Callout - Explore Programs'" primary="title:'Sponsors::Callout - Explore Programs - Button'" label="Explore programs"}}
+
+{{#> "components/section" id="become-a-sponsor" copy="title:'Sponsors::BecomeASponsor - Heading'" grid="trio"}}
+  {{> "components/info-block" copy="title:'Sponsors::BecomeASponsor - ChooseYourLevel'" secondary="title:'Sponsors::BecomeASponsor - ChooseYourLevel - Button'" id="" border=true}}
+  {{> "components/info-block" copy="title:'Sponsors::BecomeASponsor - GetInTouch'" secondary="title:'Sponsors::BecomeASponsor - GetInTouch - Button'" id="" border=true}}
+  {{> "components/info-block" copy="title:'Sponsors::BecomeASponsor - GetRecognized'" secondary="title:'Sponsors::BecomeASponsor - GetRecognized - Button'" id="" border=true}}
+{{/components/section}}
