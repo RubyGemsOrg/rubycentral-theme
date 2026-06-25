@@ -33,6 +33,7 @@
 @import "components/_link-list.css" layer(components);
 @import "components/_section.css" layer(components);
 @import "components/_team-member.css" layer(components);
+@import "components/_video-tease.css" layer(components);
 
 /* Utilities */
 @import "utilities/_container.css" layer(utilities);

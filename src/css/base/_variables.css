@@ -44,7 +44,7 @@
   --color--accent-yellow: var(--color--yellow-base);
   --color--accent-yellow-background: var(--color--yellow-light);
 
-  --color--background-base: var(--color--beige-base);
+  --color--background-base: var(--color--white-base);
   --color--background-secondary: var(--color--gray-base);
   --color--background-dark: var(--color--navy-dark);
 

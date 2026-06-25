@@ -10,9 +10,9 @@ body {
 }
 
 main {
-  grid-template-columns: minmax(0, 1fr);
   display: grid;
   gap: var(--space--xxx-large);
+  grid-template-columns: minmax(0, 1fr);
   margin-block-end: var(--space--xx-large);
   padding-inline: var(--space--page);
 }
