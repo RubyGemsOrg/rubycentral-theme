@@ -8,6 +8,15 @@
       {{/foreach}}
     {{/get}}
   {{/if}}
+  {{#if body}}
+    {{#get 'pages' filter=body limit='1'}}
+      {{#foreach pages}}
+        <div class="section__body">
+          {{content}}
+        </div>
+      {{/foreach}}
+    {{/get}}
+  {{/if}}
   <div class="section__content{{#if grid}} u-grid u-grid--{{grid}}{{/if}}">
     {{> @partial-block}}
   </div>

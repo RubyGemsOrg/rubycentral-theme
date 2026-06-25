@@ -13,7 +13,10 @@
 
 {{> "components/cta" copy="title:'Sponsors::Callout - Become A Sponsor'" primary="title:'Sponsors::Callout - Become A Sponsor - Button'" secondary="title:'Sponsors::Callout - Become A Sponsor - Secondary Button'" label="Become a sponsor"}}
 
-{{> "components/info-block" copy="title:'Sponsors::RubyAlliance'" primary="title:'Sponsors::RubyAlliance - Button'" id="ruby-alliance" container=true inverse=true}}
+{{#> "components/section" id="ruby-alliance" copy="title:'Sponsors::RubyAlliance'" body="title:'Sponsors::RubyAlliance - Body'"}}
+  {{> "components/cta-buttons" primary="title:'Sponsors::RubyAlliance - Button'"}}
+  {{> "components/sponsor-group" filter="tag:hash-ruby-alliance" grid="trio"}}
+{{/components/section}}
 
 {{#> "components/section" id="impact" copy="title:'Sponsors::Impact - Heading'" grid="trio"}}
   {{> "components/info-block" copy="title:'Sponsors::Impact - Infrastructure'" secondary="title:'Sponsors::Impact - Infrastructure - Button'" id="" border=true}}
