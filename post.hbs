@@ -7,11 +7,12 @@
     <h1 class="post-header__title">{{title}}</h1>
   </div>
 </header>
-<article class="post u-container u-container--narrow">
-  <div class="post__content">
+<div class="u-grid u-container">
+  <article class="post u-grid-span-5" data-post-content>
     {{content}}
-  </div>
-</article>
+  </article>
+  <aside class="post-toc u-grid-span-2" data-toc></aside>
+</div>
 {{/post}}
 
 {{#contentFor 'scripts'}}

@@ -7,7 +7,8 @@
   --color--black-base: #292e37;
   --color--blue-base: #4581d6;
   --color--blue-light: #edf5ff;
-  --color--gray-base: #eff4f8;
+  --color--gray-base: #e4eaf5;
+  --color--gray-light: #eff4f8;
   --color--green-base: #59c899;
   --color--green-light: #f2fff9;
   --color--navy-base: #36435e;
@@ -48,7 +49,7 @@
   --color--accent-yellow-background: var(--color--yellow-light);
 
   --color--background-base: var(--color--white-base);
-  --color--background-secondary: var(--color--gray-base);
+  --color--background-secondary: var(--color--gray-light);
   --color--background-dark: var(--color--navy-dark);
 
   --color--button-primary: var(--color--accent-yellow);

@@ -46,4 +46,3 @@
 
 /* Vendors */
 @import "vendors/ghost.css" layer(vendors);
-@import "../../node_modules/tocbot/dist/tocbot.css" layer(vendors);
