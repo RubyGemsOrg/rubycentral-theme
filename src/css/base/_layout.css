@@ -14,7 +14,6 @@ main {
   gap: var(--space--xxx-large);
   grid-template-columns: minmax(0, 1fr);
   margin-block-end: var(--space--xx-large);
-  padding-inline: var(--space--page);
 }
 
 body:has(.hero--home) {
@@ -39,4 +38,8 @@ body.page-events {
 
 body.page-sponsors {
   --color--theme-background: var(--color--accent-yellow-background);
+}
+
+body.page-news {
+  --color--theme-background: var(--color--accent-red-background);
 }

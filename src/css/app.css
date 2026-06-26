@@ -31,6 +31,7 @@
 @import "components/_info-block.css" layer(components);
 @import "components/_info-block-feature.css" layer(components);
 @import "components/_link-list.css" layer(components);
+@import "components/_news-tease.css" layer(components);
 @import "components/_section.css" layer(components);
 @import "components/_sponsor-group.css" layer(components);
 @import "components/_sponsor-logo.css" layer(components);

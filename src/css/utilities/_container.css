@@ -5,3 +5,7 @@
   padding-inline: var(--space--medium);
   width: 100%;
 }
+
+.u-container--narrow {
+  max-width: var(--container--narrow);
+}

@@ -18,6 +18,7 @@
   --color--purple-light: #fcf4ff;
   --color--red-base: #ff3b32;
   --color--red-dark: #cf2821;
+  --color--red-light: #ffeeed;
   --color--white-base: #ffffff;
   --color--yellow-base: #fec233;
   --color--yellow-light: #fff8ec;
@@ -41,6 +42,8 @@
   --color--accent-orange-background: var(--color--orange-light);
   --color--accent-purple: var(--color--purple-base);
   --color--accent-purple-background: var(--color--purple-light);
+  --color--accent-red: var(--color--red-base);
+  --color--accent-red-background: var(--color--red-light);
   --color--accent-yellow: var(--color--yellow-base);
   --color--accent-yellow-background: var(--color--yellow-light);
 
@@ -108,6 +111,7 @@
 
   /* Container sizing */
   --container--base: 85rem;
+  --container--narrow: 48rem;
 
 
   /* Spacing */
