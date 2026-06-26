@@ -29,6 +29,7 @@
   font-size: var(--font-size--heading-subsection);
 }
 
+
 .news-featured {
   display: grid;
   gap: var(--space--large);
