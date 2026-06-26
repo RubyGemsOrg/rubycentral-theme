@@ -1,0 +1,28 @@
+.post-header {
+  background-color: var(--color--theme-background);
+  padding-block: var(--space--x-large);
+}
+
+.post-header__inner {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space--small);
+}
+
+.post-header__date {
+  font-size: var(--font-size--body-small);
+  font-weight: var(--font-weight--bold);
+}
+
+.post-header__title {
+  font-size: var(--font-size--heading-title-small);
+  font-family: var(--font-family--heading);
+  font-weight: var(--font-weight--bold);
+  line-height: var(--line-height--tight);
+  margin: 0;
+}
+
+.post {
+  display: grid;
+  gap: var(--space--large);
+}

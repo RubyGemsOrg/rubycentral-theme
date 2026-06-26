@@ -43,3 +43,7 @@ body.page-sponsors {
 body.page-news {
   --color--theme-background: var(--color--accent-red-background);
 }
+
+body.post-template {
+  --color--theme-background: var(--color--background-secondary);
+}
