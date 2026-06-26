@@ -184,3 +184,41 @@
   left: 0;
   border-radius: 0 2px 2px 0;
 }
+
+/* Button Card */
+.kg-button-card {
+  display: flex;
+  margin-block: var(--space--base);
+}
+
+.kg-button-card.kg-align-left {
+  justify-content: flex-start;
+}
+
+.kg-button-card.kg-align-center {
+  justify-content: center;
+}
+
+.kg-btn {
+  background-color: var(--color--primary-base);
+  border-radius: var(--border-radius--pill);
+  color: var(--color--white);
+  display: inline-block;
+  font-size: var(--font-size--body-small);
+  font-weight: var(--font-weight--bold);
+  padding: var(--space--x-small) var(--space--base);
+  text-decoration: none;
+  transition-property: background-color;
+}
+
+.kg-btn:hover {
+  background-color: var(--color--primary-dark);
+}
+
+.kg-btn-accent {
+  background-color: var(--color--primary-base);
+}
+
+.kg-btn-accent:hover {
+  background-color: var(--color--primary-dark);
+}

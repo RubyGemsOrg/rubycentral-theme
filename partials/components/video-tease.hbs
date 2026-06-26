@@ -1,8 +1,8 @@
 <div class="video-tease">
   <p class="video-tease__title">{{title}}</p>
   <a href="{{href}}" class="video-tease__image" target="_blank" rel="noopener noreferrer">
-    {{#if image}}
-      {{> "components/image" src=image alt=alt}}
+    {{#if src}}
+      {{> "components/image" src=src alt=alt}}
     {{/if}}
   </a>
 </div>

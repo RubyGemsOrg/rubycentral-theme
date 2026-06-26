@@ -12,7 +12,7 @@
 {{#> "components/section" id="past-events" copy="title:'Events::PastEvents - Heading'" grid="trio" footerPrimary="title:'Events::PastEvents - Button'"}}
   {{#get "pages" filter="tag:hash-rubyconf-videos" limit="all" order="published_at asc"}}
     {{#foreach pages}}
-      {{> "components/video-tease" title=title image=feature_image alt=feature_image_alt href=custom_excerpt}}
+      {{> "components/video-tease" title=title src=feature_image alt=feature_image_alt href=custom_excerpt}}
     {{/foreach}}
   {{/get}}
 {{/components/section}}
