@@ -30,10 +30,15 @@ h2 {
 a {
   color: var(--color--link);
   text-decoration-color: var(--color--link-accent);
+  text-decoration-thickness: 10%;
   transition: var(--transition-duration--base) text-decoration-color var(--transition-timing--base);
 
   &:hover {
     text-decoration-color: var(--color--link);
+  }
+
+  u {
+    text-decoration: none;
   }
 }
 

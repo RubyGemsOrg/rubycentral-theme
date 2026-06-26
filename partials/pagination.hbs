@@ -1,11 +1,11 @@
-<nav class="pagination" role="navigation">
+<nav class="pagination" role="navigation" aria-label="News pagination">
     {{#if prev}}
-        <a class="newer-posts" href="{{page_url prev}}">&larr; Newer Posts</a>
+        <a class="pagination__link" href="{{page_url prev}}">&larr; Newer Posts</a>
     {{else}}
         <a href="/">&larr; Back Home</a>
     {{/if}}
-    <span class="page-number">Page {{page}} of {{pages}}</span>
+    <p class="pagination__number">Page <span class="pagination__number-current">{{page}}</span> of {{pages}}</p>
     {{#if next}}
-        <a class="older-posts" href="{{page_url next}}">Older Posts &rarr;</a>
+        <a class="pagination__link" href="{{page_url next}}">Older Posts &rarr;</a>
     {{/if}}
 </nav>

@@ -31,6 +31,9 @@
 @import "components/_info-block.css" layer(components);
 @import "components/_info-block-feature.css" layer(components);
 @import "components/_link-list.css" layer(components);
+@import "components/_news.css" layer(components);
+@import "components/_pagination.css" layer(components);
+@import "components/_post.css" layer(components);
 @import "components/_section.css" layer(components);
 @import "components/_sponsor-group.css" layer(components);
 @import "components/_sponsor-logo.css" layer(components);
@@ -44,4 +47,3 @@
 
 /* Vendors */
 @import "vendors/ghost.css" layer(vendors);
-@import "../../node_modules/tocbot/dist/tocbot.css" layer(vendors);

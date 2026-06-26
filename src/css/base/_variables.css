@@ -7,7 +7,8 @@
   --color--black-base: #292e37;
   --color--blue-base: #4581d6;
   --color--blue-light: #edf5ff;
-  --color--gray-base: #eff4f8;
+  --color--gray-base: #e4eaf5;
+  --color--gray-light: #eff4f8;
   --color--green-base: #59c899;
   --color--green-light: #f2fff9;
   --color--navy-base: #36435e;
@@ -18,6 +19,7 @@
   --color--purple-light: #fcf4ff;
   --color--red-base: #ff3b32;
   --color--red-dark: #cf2821;
+  --color--red-light: #ffeeed;
   --color--white-base: #ffffff;
   --color--yellow-base: #fec233;
   --color--yellow-light: #fff8ec;
@@ -41,11 +43,13 @@
   --color--accent-orange-background: var(--color--orange-light);
   --color--accent-purple: var(--color--purple-base);
   --color--accent-purple-background: var(--color--purple-light);
+  --color--accent-red: var(--color--red-base);
+  --color--accent-red-background: var(--color--red-light);
   --color--accent-yellow: var(--color--yellow-base);
   --color--accent-yellow-background: var(--color--yellow-light);
 
   --color--background-base: var(--color--white-base);
-  --color--background-secondary: var(--color--gray-base);
+  --color--background-secondary: var(--color--gray-light);
   --color--background-dark: var(--color--navy-dark);
 
   --color--button-primary: var(--color--accent-yellow);
@@ -108,6 +112,7 @@
 
   /* Container sizing */
   --container--base: 85rem;
+  --container--narrow: 48rem;
 
 
   /* Spacing */

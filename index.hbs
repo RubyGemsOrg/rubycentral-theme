@@ -1,13 +1,37 @@
 {{!< default}}
-{{> "components/hero" copy="title:'News::Hero - Body'"}}
 
-<div class="static-content post__list u-container">
-  {{#foreach posts}}
-    <article class="post__list__item">
-      <a href="{{url}}">{{title}}</a>
-      <p>{{date published_at format="MMMM DD, YYYY"}}</p>
-    </article>
+{{#get "pages" filter="title:'News::Hero - Body'" limit="1"}}
+  {{#foreach pages}}
+    <section class="hero">
+      <div class="hero__inner u-container u-grid">
+        <div class="hero__content u-grid-span-4">
+          {{#is "tag"}}<h1>{{@root.tag.name}} from Ruby Central</h1>{{else}}<h1>News from Ruby Central</h1>{{/is}}
+          {{content}}
+        </div>
+      </div>
+    </section>
   {{/foreach}}
+{{/get}}
 
-  {{pagination}}
+<div class="news-list u-container">
+  {{#is "tag"}}{{else}}
+    {{#get "posts" filter="tag:hash-featured" limit="1"}}
+      {{#foreach posts}}
+        {{> "components/news-featured"}}
+      {{/foreach}}
+    {{/get}}
+  {{/is}}
+
+  {{> "components/news-tag-nav"}}
+
+  <div class="news-latest">
+    {{#is "tag"}}<h2 class="heading-overline news-latest__heading">Latest {{tag.name}}</h2>{{/is}}
+    {{#is "index"}}<h2 class="heading-overline news-latest__heading">Latest News</h2>{{/is}}
+    <ul class="news-teases">
+      {{#foreach posts}}
+        {{> "components/news-tease"}}
+      {{/foreach}}
+    </ul>
+    {{pagination}}
+  </div>
 </div>
