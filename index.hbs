@@ -2,10 +2,19 @@
 {{> "components/hero" copy="title:'News::Hero - Body'"}}
 
 <div class="news-list u-container">
-  <ul class="news-teases">
-  {{#foreach posts}}
-    {{> "components/news-tease"}}
-  {{/foreach}}
-  <ul>
-  {{pagination}}
+  {{#get "posts" filter="tag:hash-featured" limit="1"}}
+    {{#foreach posts}}
+      {{> "components/news-featured"}}
+    {{/foreach}}
+  {{/get}}
+
+  <div class="news-latest">
+    <h2 class="heading-overline news-latest__heading">Latest News</h2>
+    <ul class="news-teases">
+      {{#foreach posts}}
+        {{> "components/news-tease"}}
+      {{/foreach}}
+    </ul>
+    {{pagination}}
+  </div>
 </div>
