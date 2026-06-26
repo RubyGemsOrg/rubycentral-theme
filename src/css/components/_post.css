@@ -46,8 +46,8 @@
   border-left: var(--border--light);
   display: flex;
   flex-direction: column;
-  padding-inline-start: var(--space--base);
   gap: var(--space--small);
+  padding-inline-start: var(--space--base);
 }
 
 .post-toc__link {

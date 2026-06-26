@@ -12,9 +12,9 @@
 
 .news-teases__item {
   border-bottom: var(--border--light);
-  padding-block-end: var(--gutter);
   display: grid;
   gap: var(--space--small);
+  padding-block-end: var(--gutter);
 
   h3, p {
     margin: 0;
