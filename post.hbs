@@ -3,7 +3,7 @@
 {{#post}}
 <header class="post-header">
   <div class="post-header__inner u-container">
-    <p class="post-header__date"><time datetime="{{date published_at format="YYYY-MM-DD"}}">{{date published_at format="MMMM D, YYYY"}}</time></p>
+    {{#has tag="announcements,conferences-2,open-source-2,sponsorships,governance,newsletter-2,company-spotlight,community"}}<p class="post-header__date"><time datetime="{{date published_at format="YYYY-MM-DD"}}">{{date published_at format="MMMM D, YYYY"}}</time></p>{{/has}}
     <h1 class="post-header__title">{{title}}</h1>
   </div>
 </header>

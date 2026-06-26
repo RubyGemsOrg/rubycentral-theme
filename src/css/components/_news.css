@@ -94,16 +94,7 @@
   }
 }
 
-/* Active state via Ghost body classes */
-body.page-news .news-tag-nav__link[data-tag="all"],
-body.tag-announcements .news-tag-nav__link[data-tag="announcements"],
-body.tag-conferences-2 .news-tag-nav__link[data-tag="conferences-2"],
-body.tag-community .news-tag-nav__link[data-tag="community"],
-body.tag-company-spotlight .news-tag-nav__link[data-tag="company-spotlight"],
-body.tag-governance .news-tag-nav__link[data-tag="governance"],
-body.tag-newsletter-2 .news-tag-nav__link[data-tag="newsletter-2"],
-body.tag-open-source-2 .news-tag-nav__link[data-tag="open-source-2"],
-body.tag-sponsorships .news-tag-nav__link[data-tag="sponsorships"] {
+.news-tag-nav__link[aria-current] {
   background-color: var(--color--secondary-base);
   border-color: transparent;
 }

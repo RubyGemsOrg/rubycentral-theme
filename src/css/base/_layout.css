@@ -20,6 +20,10 @@ body:has(.hero--home) {
   background-color: var(--color--background-secondary);
 }
 
+
+body.page-template {
+  --color--theme-background: var(--color--background-secondary);
+}
 body.page-about {
   --color--theme-background: var(--color--accent-purple-background);
 }
