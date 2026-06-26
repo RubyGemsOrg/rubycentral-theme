@@ -1,10 +1,6 @@
 .news-list {
   display: grid;
   gap: var(--space--x-large);
-
-  .pagination {
-    padding-block: var(--space--large);
-  }
 }
 
 .news-teases {
