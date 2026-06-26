@@ -33,6 +33,7 @@
 .news-featured {
   display: grid;
   gap: var(--space--large);
+  grid-template-columns: minmax(0, 1fr);
   padding-block-end: var(--space--large);
 
   @media (min-width: 55em) {
@@ -40,6 +41,12 @@
       grid-template-columns: 1fr 1fr;
     }
   }
+}
+
+.news-featured__image .image {
+  aspect-ratio: 3 / 2;
+  height: auto;
+  width: 100%;
 }
 
 .news-featured__content {
