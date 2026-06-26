@@ -71,3 +71,45 @@
 .news-latest__heading {
   margin: 0;
 }
+
+.news-tag-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space--x-small);
+}
+
+.news-tag-nav__link {
+  border: var(--border--dark);
+  border-radius: var(--border-radius--base);
+  color: var(--color--text-base);
+  font-size: var(--font-size--body-small);
+  font-weight: var(--font-weight--bold);
+  padding: var(--space--xx-small) var(--space--small);
+  text-decoration: none;
+  transition-property: background-color, border-color;
+
+  &:hover {
+    background-color: var(--color--secondary-base);
+    border-color: transparent;
+  }
+}
+
+/* Active state via Ghost body classes */
+body.page-news .news-tag-nav__link[data-tag="all"],
+body.tag-announcements .news-tag-nav__link[data-tag="announcements"],
+body.tag-conferences-2 .news-tag-nav__link[data-tag="conferences-2"],
+body.tag-community .news-tag-nav__link[data-tag="community"],
+body.tag-company-spotlight .news-tag-nav__link[data-tag="company-spotlight"],
+body.tag-governance .news-tag-nav__link[data-tag="governance"],
+body.tag-newsletter-2 .news-tag-nav__link[data-tag="newsletter-2"],
+body.tag-open-source-2 .news-tag-nav__link[data-tag="open-source-2"],
+body.tag-sponsorships .news-tag-nav__link[data-tag="sponsorships"] {
+  background-color: var(--color--secondary-base);
+  border-color: transparent;
+}
+
+.news-teases__tags {
+  display: flex;
+  font-size: var(--font-size--body-small);
+  gap: var(--space--small);
+}

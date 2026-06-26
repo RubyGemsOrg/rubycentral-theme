@@ -40,7 +40,8 @@ body.page-sponsors {
   --color--theme-background: var(--color--accent-yellow-background);
 }
 
-body.page-news {
+body.page-news,
+body.tag-template {
   --color--theme-background: var(--color--accent-red-background);
 }
 
