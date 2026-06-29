@@ -1,4 +1,9 @@
 .cta-buttons {
   display: flex;
+  flex-direction: column;
   gap: var(--space--base);
+
+  @media (min-width: 25em) {
+    flex-direction: row;
+  }
 }
