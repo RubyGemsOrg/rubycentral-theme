@@ -38,6 +38,7 @@
 @import "components/_sponsor-group.css" layer(components);
 @import "components/_sponsor-logo.css" layer(components);
 @import "components/_team-member.css" layer(components);
+@import "components/_timeline.css" layer(components);
 @import "components/_video-tease.css" layer(components);
 
 /* Utilities */

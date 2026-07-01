@@ -1,5 +1,6 @@
 import './global-nav';
 import './home-involvement';
+import './timeline';
 
 // Mark active tag nav link based on current path
 const currentPath = window.location.pathname;
