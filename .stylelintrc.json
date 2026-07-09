@@ -59,7 +59,7 @@
     "selector-max-universal": 1,
     "selector-no-vendor-prefix": true,
     "shorthand-property-no-redundant-values": true,
-    "string-quotes": "double",
+    "string-quotes": ["double", { "avoidEscape": true }],
     "value-keyword-case": [
       "lower",
       {

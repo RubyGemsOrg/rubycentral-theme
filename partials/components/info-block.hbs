@@ -5,8 +5,10 @@
         {{content}}
         {{#if ../../primary}}
           {{> "components/cta-buttons" primary=../../primary secondary=../../secondary}}
-        {{else if ../../secondary}}
-          {{> "components/cta-buttons" primary=../../primary secondary=../../secondary}}
+        {{else}}
+          {{#if ../../secondary}}
+            {{> "components/cta-buttons" primary=../../primary secondary=../../secondary}}
+          {{/if}}
         {{/if}}
         {{#if ../../feature}}
           {{> "components/info-block-feature" copy=../../feature label=../../featureLabel secondary=../../featureCta}}

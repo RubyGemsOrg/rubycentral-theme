@@ -2,20 +2,22 @@
   <div class="sponsor-logo sponsor-logo--anonymous">
     <p class="sponsor-logo__name">{{name}}</p>
   </div>
-{{else if href}}
-  <a href="{{href}}" target="_blank" rel="noopener noreferrer" class="sponsor-logo">
-    {{#if logo}}
-      {{> "components/image" src=logo alt=alt}}
-    {{else}}
-      <span class="sponsor-logo__name">{{name}}</span>
-    {{/if}}
-  </a>
 {{else}}
-  <div class="sponsor-logo">
-    {{#if logo}}
-      {{> "components/image" src=logo alt=alt}}
-    {{else}}
-      <p class="sponsor-logo__name">{{name}}</p>
-    {{/if}}
-  </div>
+  {{#if href}}
+    <a href="{{href}}" target="_blank" rel="noopener noreferrer" class="sponsor-logo">
+      {{#if logo}}
+        {{> "components/image" src=logo alt=alt}}
+      {{else}}
+        <span class="sponsor-logo__name">{{name}}</span>
+      {{/if}}
+    </a>
+  {{else}}
+    <div class="sponsor-logo">
+      {{#if logo}}
+        {{> "components/image" src=logo alt=alt}}
+      {{else}}
+        <p class="sponsor-logo__name">{{name}}</p>
+      {{/if}}
+    </div>
+  {{/if}}
 {{/if}}

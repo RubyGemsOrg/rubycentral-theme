@@ -58,7 +58,7 @@
   font-size: var(--font-size--body-small);
   font-weight: var(--font-weight--bold);
   padding-block-end: var(--space--xx-small);
-  text-decoration: 0;
+  text-decoration: none;
   transition-property: border-bottom-color;
 
   &:hover,

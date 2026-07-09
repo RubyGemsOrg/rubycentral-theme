@@ -28,7 +28,7 @@
 
 .home-stats__marquee {
   mask-image: linear-gradient(to right, transparent, var(--color--black-base) var(--space--x-large), var(--color--black-base) calc(100% - var(--space--x-large)), transparent);
-  mask-image: linear-gradient(to right, transparent, var(--color--black-base) var(--space--x-large), var(--color--black-base) calc(100% - var(--space--x-large)), transparent);
+  -webkit-mask-image: linear-gradient(to right, transparent, var(--color--black-base) var(--space--x-large), var(--color--black-base) calc(100% - var(--space--x-large)), transparent);
   min-width: 0;
   overflow: hidden;
 

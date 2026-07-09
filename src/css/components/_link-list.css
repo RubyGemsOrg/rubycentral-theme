@@ -31,7 +31,7 @@
   display: flex;
   justify-content: space-between;
   padding-block-end: var(--gutter);
-  text-decoration: 0;
+  text-decoration: none;
   transition-property: border-color;
 
   &:hover {

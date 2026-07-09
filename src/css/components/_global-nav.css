@@ -95,7 +95,7 @@
   line-height: 1;
   padding-block-end: var(--space--xx-small);
   padding-inline: var(--space--xx-small);
-  text-decoration: 0;
+  text-decoration: none;
   transition-property: border-bottom-color;
 
   &[aria-current],
