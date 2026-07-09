@@ -1,0 +1,16 @@
+<section class="hero">
+  <div class="hero__inner u-container u-grid">
+    <div class="hero__content u-grid-span-4">
+      {{#get 'pages' filter=copy limit='1'}}
+        {{#foreach pages}}
+          {{content}}
+        {{/foreach}}
+      {{/get}}
+    </div>
+    {{#if links}}
+      <div class="hero__links">
+        {{> "components/link-list" links=links label=linksLabel}}
+      </div>
+    {{/if}}
+  </div>
+</section>

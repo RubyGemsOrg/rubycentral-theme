@@ -1,45 +1,90 @@
-<footer class='footer'>
-    <div class='footer__inner'>
-        <section class='footer__top'>
-            <img class='footer__logo' src={{asset 'images/full-logo.png'}} />
-            <div class='kg-button-card'>
-                <a class='kg-btn' href='#/portal/signup'>Membership</a>
-            </div>
-        </section>
-        <section class='footer__links'>
-            {{navigation type='secondary'}}
-        </section>
-        <section class='footer__bottom'>
-            <form
-                action='https://rubycentral.us13.list-manage.com/subscribe/post?u=e7e9b891a6914ff2f5acdfd15&amp;id=0a6a1336c5&amp;v_id=5118&amp;f_id=008ef4e7f0'
-                autocomplete='off'
-                class='footer__form'
-                method='post'
-            >
-                <div class='footer__form__row'>
-                    <input
-                        data-lpignore='true'
-                        data-1p-ignore
-                        name='EMAIL'
-                        placeholder='Enter your email...'
-                        required='true'
-                        type='email'
-                    />
-                    <div class='kg-button-card'>
-                        <button class='kg-btn' type='submit'>Sign Up</button>
-                    </div>
-                </div>
-            </form>
-            <div class='footer__bottom__socials'>
-                <div class='footer__bottom__socials__links'>
-                    {{#get 'pages' filter="title:'Footer - Socials'" limit='1'}}
-                        {{#foreach pages}}
-                            {{content}}
-                        {{/foreach}}
-                    {{/get}}
-                </div>
-                <small>©{{date format='YYYY'}} Ruby Central. All Rights Reserved.</small>
-            </div>
-        </section>
-    </div>
+<footer class="global-footer">
+  <div class="global-footer__inner u-container u-grid">
+
+  <a href="/" class="global-footer__logo">{{> "icons/logo"}}</a>
+
+  <div class="global-footer__links">
+    <section class="global-footer__section">
+      <h2 class="global-footer__heading">Ecosystem</h2>
+      <nav class="global-footer__nav" aria-label="Ecosystem">
+        {{#get 'pages' filter="title:'Footer - Ecosystem'" limit='1'}}
+            {{#foreach pages}}
+              {{content}}
+            {{/foreach}}
+          {{/get}}
+      </nav>
+    </section>
+
+    <section class="global-footer__section">
+      <h2 class="global-footer__heading">Ruby Central</h2>
+      <nav class="global-footer__nav" aria-label="Ruby Central">
+        {{#get 'pages' filter="title:'Footer - Ruby Central'" limit='1'}}
+            {{#foreach pages}}
+              {{content}}
+            {{/foreach}}
+          {{/get}}
+      </nav>
+    </section>
+
+    <section class="global-footer__section">
+      <h2 class="global-footer__heading">Get involved</h2>
+      <nav class="global-footer__nav" aria-label="Get involved">
+        {{#get 'pages' filter="title:'Footer - Get Involved'" limit='1'}}
+          {{#foreach pages}}
+            {{content}}
+          {{/foreach}}
+        {{/get}}
+      </nav>
+    </section>
+
+    <section class="global-footer__section">
+      <h2 class="global-footer__heading">Follow us</h2>
+      <nav class="global-footer__nav" aria-label="Follow us">
+        {{#get 'pages' filter="title:'Footer - Socials'" limit='1'}}
+          {{#foreach pages}}
+            {{content}}
+          {{/foreach}}
+        {{/get}}
+      </nav>
+    </section>
+  </div>
+
+  <section class="global-footer__newsletter">
+    <h2 class="heading-subsection u-grid-span-7">Subscribe to our newsletter</h2>
+    <form
+      action="https://rubycentral.us13.list-manage.com/subscribe/post?u=e7e9b891a6914ff2f5acdfd15&amp;id=0a6a1336c5&amp;v_id=5118&amp;f_id=008ef4e7f0"
+      autocomplete="off"
+      class="global-footer__newsletter-form u-grid-span-3"
+      method="post"
+    >
+      <label for="global-footer-newsletter-email" class="u-grid-span-2">
+        <span>Your email address</span>
+        <input
+          autocapitalize="off"
+          autocomplete="email"
+          autocorrect="off"
+          data-lpignore="true"
+          data-1p-ignore
+          id="global-footer-newsletter-email"
+          name="EMAIL"
+          required
+          spellcheck="false"
+          type="email"
+        />
+      </label>
+      <button type="submit" class="button button--inverted">Sign up</button>
+    </form>
+  </section>
+
+  <section class="global-footer__section--bottom">
+    <small class="global-footer__copyright">©<time datetime="{{date format='YYYY'}}">{{date format='YYYY'}}</time> Ruby Central. All Rights Reserved.</small>
+    <nav class="global-footer__nav" aria-label="Legal">
+      {{#get 'pages' filter="title:'Footer - Legal'" limit='1'}}
+        {{#foreach pages}}
+          {{content}}
+        {{/foreach}}
+      {{/get}}
+    </nav>
+  </section>
+  </div>
 </footer>

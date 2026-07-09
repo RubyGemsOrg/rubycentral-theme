@@ -1,0 +1,76 @@
+.button,
+.cta-buttons__button a {
+  align-items: center;
+  border: var(--border-width--base) solid transparent;
+  cursor: pointer;
+  display: flex;
+  font-family: var(--font-family--ui);
+  font-size: var(--font-size--ui);
+  font-weight: var(--font-weight--bold);
+  gap: var(--space--x-small);
+  justify-content: center;
+  line-height: 1;
+  padding-block: var(--space--base);
+  padding-inline: var(--space--medium);
+  text-align: center;
+  text-decoration: none;
+  transition-duration: var(--transition-duration--base);
+  transition-property: background-color, color;
+  transition-timing-function: var(--transition-timing--base);
+
+  &:focus-visible {
+    outline: var(--border-width--thick) solid var(--color--focus);
+    outline-offset: 2px;
+  }
+}
+
+.button--primary,
+.cta-buttons__primary a {
+  --bg-color: var(--color--button-primary);
+
+  background-color: var(--color--button-primary);
+  border-radius: var(--border-radius--medium) var(--border-radius--small) var(--border-radius--medium) var(--border-radius--small);
+
+  &:hover,
+  &:focus-visible {
+    background-color: var(--color--button-primary-hover);
+    color: var(--color--text-inverse);
+  }
+}
+
+.button--secondary,
+.cta-buttons__secondary a {
+
+  background-color: var(--color--background-base);
+  border-color: var(--color--button-secondary);
+  border-radius: var(--border-radius--small) var(--border-radius--medium) var(--border-radius--small) var(--border-radius--medium);
+  color: var(--color--text-base);
+  transition-property: border-color;
+
+  &:hover,
+  &:focus-visible {
+    border-color: var(--color--button-primary);
+  }
+}
+
+.button--inverted {
+  background-color: var(--color--background-base);
+  border-color: var(--color--button-secondary);
+  border-radius: var(--border-radius--small) var(--border-radius--medium) var(--border-radius--small) var(--border-radius--medium);
+  color: var(--color--text-base);
+
+  &:hover,
+  &:focus-visible {
+    background-color: var(--color--button-primary);
+  }
+}
+
+.button--icon {
+  border-radius: var(--border-radius--small);
+  padding-block: var(--space--small);
+  padding-inline: var(--space--small);
+}
+
+.button:disabled {
+  cursor: not-allowed;
+}

@@ -1,33 +1,50 @@
+@layer reset, dependencies, base, components, utilities, vendors;
+
+/* Resets */
+@import "resets/_normalize.css" layer(reset);
+
+/* Dependencies */
+@import "base/_variables.css" layer(dependencies);
+@import "base/_fonts.css" layer(dependencies);
+
 /* Base */
-@import './base/typography.css';
-@import './base/variables.css';
+@import "base/_animation.css" layer(base);
+@import "base/_buttons.css" layer(base);
+@import "base/_disclosures.css" layer(base);
+@import "base/_forms.css" layer(base);
+@import "base/_layout.css" layer(base);
+@import "base/_lists.css" layer(base);
+@import "base/_media.css" layer(base);
+@import "base/_tables.css" layer(base);
+@import "base/_typography.css" layer(base);
 
 /* Components */
-@import './components/button.css';
-@import './components/code.css';
-@import './components/get-involved.css';
-@import './components/sponsors.css';
-@import './components/profile-image.css';
-@import './components/static-content.css';
-@import './components/back.css';
-@import './components/divider.css';
+/* Import components from the component folder here in ABC order */
+@import "components/_cta.css" layer(components);
+@import "components/_cta-buttons.css" layer(components);
+@import "components/_global-footer.css" layer(components);
+@import "components/_global-nav.css" layer(components);
+@import "components/_hero.css" layer(components);
+@import "components/_home-involvement.css" layer(components);
+@import "components/_home-stats.css" layer(components);
+@import "components/_image.css" layer(components);
+@import "components/_info-block.css" layer(components);
+@import "components/_info-block-feature.css" layer(components);
+@import "components/_link-list.css" layer(components);
+@import "components/_news.css" layer(components);
+@import "components/_pagination.css" layer(components);
+@import "components/_post.css" layer(components);
+@import "components/_section.css" layer(components);
+@import "components/_sponsor-group.css" layer(components);
+@import "components/_sponsor-logo.css" layer(components);
+@import "components/_team-member.css" layer(components);
+@import "components/_timeline.css" layer(components);
+@import "components/_video-tease.css" layer(components);
 
-/* Layout */
-@import './layout/reset.css';
-@import './layout/dropdown.css';
-@import './layout/container.css';
-@import './layout/navigation-top.css';
-@import './layout/footer.css';
-
-/* Pages */
-@import './pages/post.css';
-@import './pages/home.css';
-@import './pages/conferences.css';
-@import './pages/open-source.css';
-@import './pages/about.css';
-
-@import './modern.css';
+/* Utilities */
+@import "utilities/_container.css" layer(utilities);
+@import "utilities/_grid.css" layer(utilities);
+@import "utilities/_hide-visually.css" layer(utilities);
 
 /* Vendors */
-@import './vendors/ghost.css';
-@import '../../node_modules/tocbot/dist/tocbot.css';
+@import "vendors/ghost.css" layer(vendors);

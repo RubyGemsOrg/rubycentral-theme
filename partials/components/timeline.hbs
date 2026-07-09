@@ -1,0 +1,31 @@
+<section id="timeline" class="timeline">
+
+  <div class="timeline__scroll">
+    <div class="timeline__track">
+      {{#get 'pages' filter="tag:hash-about-timeline-item" limit="all" order="published_at asc" include="tags"}}
+        {{#foreach pages}}
+          <button
+            class="timeline__item{{#has tag="hash-about-timeline-current"}} timeline__item--current{{/has}}"
+            type="button"
+            data-timeline-item
+            data-year="{{title}}"
+            {{#has tag="hash-about-timeline-current"}}data-default{{/has}}
+          >
+            <span class="timeline__year">{{title}}</span>
+            <span class="timeline__marker"></span>
+            <span class="timeline__label">{{custom_excerpt}}</span>
+          </button>
+        {{/foreach}}
+      {{/get}}
+    </div>
+  </div>
+
+  {{#get 'pages' filter="tag:hash-about-timeline-item" limit="all" order="published_at asc"}}
+    {{#foreach pages}}
+      <div class="timeline__detail" data-timeline-detail="{{title}}" hidden>
+        <p class="timeline__detail-year">{{title}}</p>
+        <div class="timeline__detail-body">{{content}}</div>
+      </div>
+    {{/foreach}}
+  {{/get}}
+</section>

@@ -4,7 +4,11 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>{{meta_title}}</title>
-    <link rel="shortcut icon" type="image/png" href="{{asset "images/favicon.png"}}">
+    <link rel="icon" href="{{asset "images/favicon.svg"}}" type="image/svg+xml">
+    <link rel="icon" href="{{asset "images/favicon.ico"}}" sizes="32x32">
+    <link rel="icon" href="{{asset "images/favicon-16x16.png"}}" type="image/png" sizes="16x16">
+    <link rel="icon" href="{{asset "images/favicon-32x32.png"}}" type="image/png" sizes="32x32">
+    <link rel="apple-touch-icon" href="{{asset "images/apple-touch-icon.png"}}">
     {{!-- CSS and JS with asset helper--}}
     <link rel="stylesheet" href="{{asset "dist/app.css"}}" />
     <script src="//code.jquery.com/jquery-3.6.4.min.js" defer></script>
@@ -22,7 +26,7 @@
   </head>
 
   <body class="{{body_class}}">
-    {{> "navigation-top" }}
+    {{navigation}}
 
     <main>
       {{!-- All content gets inserted here, index.hbs, post.hbs, etc --}}

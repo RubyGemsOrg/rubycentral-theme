@@ -1,0 +1,24 @@
+<section{{#if id}} id="{{id}}"{{/if}} class="info-block{{#if border}} info-block--border{{/if}}{{#if container}} u-container{{/if}}{{#if inverse}} info-block--inverse{{/if}}">
+  {{#get 'pages' filter=copy limit='1' include='feature_image'}}
+    {{#foreach pages}}
+      <div class="info-block__content">
+        {{content}}
+        {{#if ../../primary}}
+          {{> "components/cta-buttons" primary=../../primary secondary=../../secondary}}
+        {{else}}
+          {{#if ../../secondary}}
+            {{> "components/cta-buttons" primary=../../primary secondary=../../secondary}}
+          {{/if}}
+        {{/if}}
+        {{#if ../../feature}}
+          {{> "components/info-block-feature" copy=../../feature label=../../featureLabel secondary=../../featureCta}}
+        {{/if}}
+      </div>
+      {{#if feature_image}}
+        <div class="info-block__image">
+          {{> "components/image" src=feature_image alt=custom_excerpt class=../../imageClass}}
+        </div>
+      {{/if}}
+    {{/foreach}}
+  {{/get}}
+</section>

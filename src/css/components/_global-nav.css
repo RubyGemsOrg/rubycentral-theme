@@ -1,0 +1,105 @@
+.global-nav {
+  background-color: var(--color--theme-background);
+  padding-block: var(--space--base);
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: var(--z-index--layout);
+}
+
+.global-nav__inner {
+  align-items: center;
+  display: grid;
+  gap: var(--space--large);
+  grid-template-areas:
+    "logo menu"
+    "nav nav";
+  grid-template-columns: 1fr min-content;
+}
+
+.global-nav.is-closed .global-nav__inner {
+  grid-template-areas: "logo menu";
+}
+
+@container global-nav (min-width: 65em) {
+  .global-nav__inner,
+  .global-nav.is-closed .global-nav__inner {
+    grid-template-areas: "logo nav";
+    grid-template-columns: min-content 1fr;
+  }
+}
+
+.global-nav.is-closed .global-nav__links {
+  display: none;
+}
+
+@container global-nav (min-width: 65em) {
+  .global-nav.is-closed .global-nav__links {
+    display: flex;
+  }
+}
+
+.global-nav__logo {
+  color: var(--color--primary-base);
+  display: block;
+  grid-area: logo;
+  transition-property: color;
+
+  &:hover {
+    color: var(--color--primary-dark);
+  }
+
+  svg {
+    height: auto;
+    width: 12rem;
+  }
+}
+
+.global-nav__menu-toggle {
+  grid-area: menu;
+
+  @container global-nav (min-width: 65em) {
+    display: none;
+  }
+}
+
+.global-nav__links {
+  display: flex;
+  grid-area: nav;
+
+  @container global-nav (min-width: 65em) {
+    justify-content: flex-end;
+  }
+}
+
+.global-nav__list {
+  align-items: baseline;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space--large);
+
+  @container global-nav (min-width: 65em) {
+    align-items: center;
+    flex-direction: row;
+  }
+}
+
+.global-nav__link {
+  background-color: transparent;
+  border: 0;
+  border-bottom: var(--border-width--thick) solid transparent;
+  color: inherit;
+  cursor: pointer;
+  font-size: var(--font-size--body-small);
+  font-weight: var(--font-weight--bold);
+  line-height: 1;
+  padding-block-end: var(--space--xx-small);
+  padding-inline: var(--space--xx-small);
+  text-decoration: none;
+  transition-property: border-bottom-color;
+
+  &[aria-current],
+  &:hover {
+    border-bottom-color: var(--color--primary-base);
+  }
+}

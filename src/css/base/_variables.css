@@ -1,0 +1,158 @@
+:root {
+  /* Color scheme settings */
+  color-scheme: light dark;
+
+  /* Primitive colors */
+  --color--beige-base: #fffcfa;
+  --color--black-base: #292e37;
+  --color--blue-base: #4581d6;
+  --color--blue-light: #edf5ff;
+  --color--gray-base: #e4eaf5;
+  --color--gray-light: #eff4f8;
+  --color--green-base: #59c899;
+  --color--green-light: #f2fff9;
+  --color--navy-base: #36435e;
+  --color--navy-dark: #282e38;
+  --color--orange-base: #f87d25;
+  --color--orange-light: #fff5f1;
+  --color--purple-base: #755384;
+  --color--purple-light: #fcf4ff;
+  --color--red-base: #ff3b32;
+  --color--red-dark: #cf2821;
+  --color--red-light: #ffeeed;
+  --color--white-base: #ffffff;
+  --color--yellow-base: #fec233;
+  --color--yellow-light: #fff8ec;
+
+  /* Semantic colors */
+  --color--primary-base: var(--color--red-base);
+  --color--primary-dark: var(--color--red-dark);
+  --color--secondary-base: var(--color--yellow-base);
+  --color--primary-inverse: var(--color--navy-base);
+  --color--primary-inverse-dark: var(--color--navy-dark);
+
+  --color--text-base: var(--color--black-base);
+  --color--text-inverse: var(--color--white-base);
+  --color--text-dark: var(--color--black-base);
+
+  --color--accent-blue: var(--color--blue-base);
+  --color--accent-blue-background: var(--color--blue-light);
+  --color--accent-green: var(--color--green-base);
+  --color--accent-green-background: var(--color--green-light);
+  --color--accent-orange: var(--color--orange-base);
+  --color--accent-orange-background: var(--color--orange-light);
+  --color--accent-purple: var(--color--purple-base);
+  --color--accent-purple-background: var(--color--purple-light);
+  --color--accent-red: var(--color--red-base);
+  --color--accent-red-background: var(--color--red-light);
+  --color--accent-yellow: var(--color--yellow-base);
+  --color--accent-yellow-background: var(--color--yellow-light);
+
+  --color--background-base: var(--color--white-base);
+  --color--background-secondary: var(--color--gray-light);
+  --color--background-dark: var(--color--navy-dark);
+
+  --color--button-primary: var(--color--accent-yellow);
+  --color--button-primary-hover: var(--color--primary-inverse);
+
+  --color--button-secondary: var(--color--primary-inverse);
+
+  --color--focus: var(--color--primary-dark);
+  --color--link: var(--color--text-base);
+  --color--link-accent: var(--color--primary-base);
+
+  /* Font & typography */
+  --font-size--50: 0.875rem;
+  --font-size--100: 1rem;
+  --font-size--200: 1.15rem;
+  --font-size--300: 1.5rem;
+  --font-size--400: clamp(1.75rem, 1.375rem + 1vw, 2rem);
+  --font-size--500: clamp(2rem, 1.25rem + 2vw, 2.5rem);
+  --font-size--600: clamp(2.5rem, 1.75rem + 2vw, 3.25rem);
+
+  --font-size--body-callout: var(--font-size--400);
+  --font-size--body-base: var(--font-size--100);
+  --font-size--body-large: var(--font-size--200);
+  --font-size--body-small: var(--font-size--50);
+  --font-size--heading-data: var(--font-size--200);
+  --font-size--heading-overline: var(--font-size--200);
+  --font-size--heading-section: var(--font-size--400);
+  --font-size--heading-subsection: var(--font-size--300);
+  --font-size--heading-title-big: var(--font-size--600);
+  --font-size--heading-title-small: var(--font-size--500);
+  --font-size--ui: var(--font-size--100);
+
+  --font-weight--normal: 400;
+  --font-weight--bold: 600;
+
+  --font-family--sans-fallback: system-ui, "Arial", "Helvetica", sans-serif;
+  --font-family--inter: "Inter", var(--font-family--sans-fallback);
+  --font-family--rubik: "Rubik", var(--font-family--sans-fallback);
+
+  --font-family--body: var(--font-family--inter);
+  --font-family--heading: var(--font-family--rubik);
+  --font-family--ui: var(--font-family--rubik);
+
+  --line-height--base: 1.5;
+  --line-height--tight: 1.2;
+
+  /* Borders */
+  --border-radius--small: 0.25rem;
+  --border-radius--base: 0.5rem;
+  --border-radius--medium: 1rem;
+  --border-radius--large: 6.25rem;
+  --border-radius--circle: 100%;
+
+  --border-width--base: 1px;
+  --border-width--thick: 2px;
+
+  --border--base: var(--border-width--base) solid var(--color--secondary-base);
+  --border--light: var(--border-width--base) solid var(--color--gray-base);
+  --border--dark: var(--border-width--base) solid var(--color--primary-inverse);
+
+  /* Container sizing */
+  --container--base: 85rem;
+  --container--narrow: 48rem;
+
+
+  /* Spacing */
+  --space--xx-small: 0.25rem;
+  --space--x-small: 0.5rem;
+  --space--small: 0.75rem;
+  --space--base: 1rem;
+  --space--medium: 1.5rem;
+  --space--large: 2rem;
+  --space--x-large: 3rem;
+  --space--xx-large: 4rem;
+  --space--xxx-large: 7rem;
+
+
+  /* Spacing - Page margins */
+  --space--page: var(--space--medium);
+
+  /* Transitions */
+  --transition-duration--base: 0.2s;
+  --transition-timing--base: ease-in-out;
+
+  /* Z-index */
+  --z-index--basement: -999999;
+  --z-index--base: 1;
+  --z-index--layout: 1000;
+  --z-index--modal: 4000;
+  --z-index--ceiling: 999999;
+
+  /* High contrast settings */
+  @media (prefers-contrast: more) {
+    --color--focus: Highlight;
+    --color--text-base: ButtonText;
+    --border--base: var(--border-width--base) solid ButtonText;
+    --border--light: var(--border-width--base) solid ButtonText;
+    --border--dark: var(--border-width--base) solid ButtonText;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  :root {
+    --space--page-margin-inline: var(--space--x-large);
+  }
+}

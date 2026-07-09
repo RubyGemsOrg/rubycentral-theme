@@ -1,0 +1,26 @@
+.cta {
+  background-color: var(--color--background-secondary);
+  border-radius: var(--border-radius--medium) var(--border-radius--large) var(--border-radius--medium) var(--border-radius--large);
+  display: flex;
+  justify-content: center;
+  padding: var(--space--xx-large);
+
+  p {
+    font-family: var(--font-family--heading);
+    font-size: var(--font-size--body-callout);
+    font-weight: var(--font-weight--normal);
+    line-height: var(--line-height--tight);
+    margin: 0;
+  }
+}
+
+body:has(.hero--home) .cta {
+  background-color: var(--color--background-base);
+}
+
+.cta__inner {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space--medium);
+  max-width: 85ch;
+}

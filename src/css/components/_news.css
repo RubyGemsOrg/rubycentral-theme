@@ -1,0 +1,113 @@
+.news-list {
+  display: grid;
+  gap: var(--space--x-large);
+}
+
+.news-teases {
+  --gutter: var(--space--large);
+
+  display: grid;
+  gap: var(--gutter);
+}
+
+.news-teases__item {
+  border-bottom: var(--border--light);
+  display: grid;
+  gap: var(--space--small);
+  padding-block-end: var(--gutter);
+
+  h3, p {
+    margin: 0;
+  }
+}
+
+.news-teases__date {
+  font-size: var(--font-size--body-small);
+}
+
+.news-teases__title {
+  font-size: var(--font-size--heading-subsection);
+}
+
+
+.news-featured {
+  display: grid;
+  gap: var(--space--large);
+  grid-template-columns: minmax(0, 1fr);
+  padding-block-end: var(--space--large);
+
+  @media (min-width: 55em) {
+    &:has(.news-featured__image) {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+}
+
+.news-featured__image .image {
+  aspect-ratio: 3 / 2;
+  height: auto;
+  width: 100%;
+}
+
+.news-featured__content {
+  align-content: start;
+  display: grid;
+  gap: var(--space--small);
+
+  p {
+    margin: 0;
+  }
+}
+
+.news-featured__date {
+  font-size: var(--font-size--body-small);
+}
+
+.news-featured__title {
+  font-family: var(--font-family--heading);
+  font-size: var(--font-size--heading-section);
+  line-height: var(--line-height--tight);
+  margin: 0;
+}
+
+.news-latest {
+  display: grid;
+  gap: var(--space--large);
+}
+
+.news-latest__heading {
+  margin: 0;
+}
+
+.news-tag-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space--x-small);
+}
+
+.news-tag-nav__link {
+  border: var(--border--dark);
+  border-radius: var(--border-radius--base);
+  color: var(--color--text-base);
+  font-size: var(--font-size--body-small);
+  font-weight: var(--font-weight--bold);
+  padding: var(--space--xx-small) var(--space--small);
+  text-decoration: none;
+  transition-property: background-color, border-color;
+
+  &:hover {
+    background-color: var(--color--secondary-base);
+    border-color: transparent;
+  }
+}
+
+.news-tag-nav__link[aria-current] {
+  background-color: var(--color--secondary-base);
+  border-color: transparent;
+}
+
+.news-teases__tags {
+  display: flex;
+  font-size: var(--font-size--body-small);
+  gap: var(--space--small);
+}

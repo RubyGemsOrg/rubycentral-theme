@@ -1,5 +1,14 @@
-import "../../css/app.css"
-import './navigation-top';
+import './global-nav';
+import './home-involvement';
+import './timeline';
+
+// Mark active tag nav link based on current path
+const currentPath = window.location.pathname;
+document.querySelectorAll('[data-tag-nav] a').forEach(link => {
+    if (link.getAttribute('href') === currentPath) {
+        link.setAttribute('aria-current', 'page');
+    }
+});
 
 document.querySelectorAll('.section-header').forEach((header) => {
     header.addEventListener('click', function () {

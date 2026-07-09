@@ -1,0 +1,49 @@
+.u-grid {
+  --cols: 7;
+
+  display: grid;
+  gap: var(--space--medium);
+  grid-template-columns: minmax(0, 1fr);
+
+  @media screen and (min-width: 55em) {
+    grid-template-columns: repeat(var(--cols), minmax(0, 1fr));
+  }
+}
+
+.u-grid--trio {
+  --cols: 3;
+}
+
+.u-grid--quad {
+  --cols: 4;
+}
+
+.u-grid-span-1 {
+  grid-column: span 1;
+}
+
+@media screen and (min-width: 55em) {
+  .u-grid-span-2 {
+    grid-column: span 2;
+  }
+
+  .u-grid-span-3 {
+    grid-column: span 3;
+  }
+
+  .u-grid-span-4 {
+    grid-column: span 4;
+  }
+
+  .u-grid-span-5 {
+    grid-column: span 5;
+  }
+
+  .u-grid-span-6 {
+    grid-column: span 6;
+  }
+
+  .u-grid-span-7 {
+    grid-column: span 7;
+  }
+}

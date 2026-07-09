@@ -1,0 +1,18 @@
+{{!< default}}
+{{> "components/hero" copy="title:'Events::Hero - Body'" links="tag:hash-events-hero-link" linksLabel="More in events"}}
+
+{{> "components/info-block" copy="title:'Events::RubyConf2026'" secondary="title:'Events::RubyConf2026 - Secondary Button'" id="rubyconf-2026" container=true inverse=true}}
+
+{{> "components/cta" copy="title:'Events::Callout'" primary="title:'Events::Callout - Button'" label="Scholars and Guides"}}
+
+{{> "components/info-block" copy="title:'Events::CallForProposals'" secondary="title:'Events::CallForProposals - Secondary Button'" id="call-for-proposals" container=true}}
+
+{{> "components/info-block" copy="title:'Events::NearbyEvents'" primary="title:'Events::NearbyEvents - Button'" id="nearby-events" container=true inverse=true}}
+
+{{#> "components/section" id="past-events" copy="title:'Events::PastEvents - Heading'" grid="trio" footerPrimary="title:'Events::PastEvents - Button'"}}
+  {{#get "pages" filter="tag:hash-rubyconf-videos" limit="all" order="published_at asc"}}
+    {{#foreach pages}}
+      {{> "components/video-tease" title=title image=feature_image alt=feature_image_alt href=custom_excerpt}}
+    {{/foreach}}
+  {{/get}}
+{{/components/section}}

@@ -1,0 +1,9 @@
+.home-involvement {
+  display: grid;
+  gap: var(--space--large);
+}
+
+.home-involvement__image {
+  justify-self: center;
+  max-width: 65rem;
+}

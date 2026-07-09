@@ -1,0 +1,54 @@
+html {
+  scroll-padding-block-start: 6rem;
+}
+
+body {
+  --color--theme-background: var(--color--background-base);
+
+  background-color: var(--color--background-base);
+  container: global-nav global-footer info-block / inline-size;
+}
+
+main {
+  display: grid;
+  gap: var(--space--xxx-large);
+  grid-template-columns: minmax(0, 1fr);
+  margin-block-end: var(--space--xx-large);
+}
+
+body:has(.hero--home) {
+  background-color: var(--color--background-secondary);
+}
+
+
+body.page-template {
+  --color--theme-background: var(--color--background-secondary);
+}
+body.page-about {
+  --color--theme-background: var(--color--accent-purple-background);
+}
+
+body.page-community {
+  --color--theme-background: var(--color--accent-green-background);
+}
+
+body.page-programs {
+  --color--theme-background: var(--color--accent-blue-background);
+}
+
+body.page-events {
+  --color--theme-background: var(--color--accent-orange-background);
+}
+
+body.page-sponsors {
+  --color--theme-background: var(--color--accent-yellow-background);
+}
+
+body.page-news,
+body.tag-template {
+  --color--theme-background: var(--color--accent-red-background);
+}
+
+body.post-template {
+  --color--theme-background: var(--color--background-secondary);
+}
